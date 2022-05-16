@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>사용자 입력 속성</title>
+    <style>
+        fieldset{border: 5px solid grey}
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>필드에 입력형식 힌트주기</legend>
+            <p>
+                <label for="id"><span>*</span> 아이디</label>
+                <input type="text" id="id" placeholder="아이디" title="아이디 입력" required disabled>
+            </p>
+            <p>
+                <label for="pw"><span>*</span> 비밀번호</label>
+                <input type="password" id="pw" placeholder="비밀번호" title="비밀번호 입력" required>
+            </p>
+            <p>
+                <label for="pwc"><span>*</span> 비밀번호 확인</label>
+                <input type="password" id="pwc" placeholder="비밀번호 확인" title="비밀번호 확인" required>
+            </p>
+            <p>
+                <input type="submit" value="확인">
+            </p>
+        </fieldset>
+    </form>    
+</body>
+</html>

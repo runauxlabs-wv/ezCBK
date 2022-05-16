@@ -1,0 +1,84 @@
+관공서 > 접근성,호환성
+        1년마다 접근성보완
+
+디자인->퍼블리싱->개발자(백앤드)
+
+네이밍에 있어서 가이드나 기준이 있으면 깔끔하다.
++정리 +주석처리
+
+Q. 코딩에있어서 중요하게생각하는기준? 
+A. 협업 팀원과의소통
+
+# 오류에 노출이 많이 되어서 경험을 쌓자.
+
+Q. 디자인툴 많이쓰나요? 
+A. 기본. 받는 디자인시안이 다양하다.  * 피그마/스케치 -> 제플린
+                                    * 디자인 -> 퍼블리싱
+
+# 눈으로 많이 봐서 디자인 안목을 넓혀라. 
+# 웹 : /gdweb.co.kr /awwwards.com /plus-ex.com
+# 앱 : /dribbble.com 
++기업홈페이지 기본적으로 공부하기편하다.
+*보는순서* > 디자인 > 메뉴(네비)의종류 > 구조(회사/개인마다다르다) 
+                                        +접근성 유의깊게보기
+
+# 코딩->재사용 용이하게 제작시 클래스명만 바꿔서 시간을 줄인다.
+
++모바일폰트 10pt 이하 X
+
+포트폴리오 제작시 375까지만 반응형 가져가도 무방하다.
+포폴에 넣고싶은 효과 디자인 주석해서 가지고있으면 도움이됨.
+
+
+디자인요소 -> 인터렉션! 
+
+서브페이지 제작시간이 없어도 EX)준비중입니다. 정성을 보이면 어느정도 허용
++돌려막기! 
+
+소스많으면 작업하기 포폴작업이 수월. ex)명품,브랜드
++관심있는분야로 작업을하면 효율이 오른다.
+
+해외사이트 배경까는경우가 많다.
+
+
+# 티스토리/블로그/노션 등 배운거나 오류수정 기록하면 좋다.
+
+노션 조금씩 짬내서 이용하기.
+깃허브 사용 추천! -> 코드리뷰 
+
+# https://spark-cobra-490.notion.site/8cec7ac040a7429894da7b52295fb852
+
+🗒 NOTION : [https://www.notion.so/ko-kr/product](https://www.notion.so/ko-kr/product)
+
+🐱 Github : [https://github.com/](https://github.com/)
+
+📒 Tistory : [https://www.tistory.com/](https://www.tistory.com/)
+
+📝 BRUNCH : [https://brunch.co.kr/](https://brunch.co.kr/)
+
+**DESIGN**
+
+🖥 GDWEB : [https://www.gdweb.co.kr/main/](https://www.gdweb.co.kr/main/)
+
+📱 WWIT : [https://wwit.design/](https://wwit.design/)
+
+💻 BEHANCE : [https://www.behance.net/](https://www.behance.net/)
+
+🏀 DRIBBBLE : [https://dribbble.com/](https://dribbble.com/)
+
+📌 PINTEREST : [https://www.pinterest.co.kr/](https://www.pinterest.co.kr/)
+
+템플릿 갤러리 : [https://www.notion.so/1639712845e5473083442d3ff3be023c](https://www.notion.so/1639712845e5473083442d3ff3be023c)
+
+면접 -> 포폴위주로 질문
+
+코딩테스트 -> 어렵진않고 개인적인 작업을 보기위함.
+
+
+
+
+
+
+
+
+

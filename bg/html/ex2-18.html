@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko"> 
+<head>
+<meta charset="utf-8">
+<title>글자의 단위</title> 
+<link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+<style> 
+    html {font-size: 10px; }
+    /* 최상위 루트를 이야기 하며, :root{}라고 쓸 수 있다. */
+    *{ font-family: 'Gugi', cursive; }
+    ul { font-size: 20px; }
+    li { font-size : 1.5em; }
+    a { font-size : 1.5em; }
+    li:nth-child(4) { font-size: 1.5rem; }
+    p{ height: 4rem; }
+</style> 
+</head> 
+<body>
+    <p>오늘의 진료는 본관에서 실시합니다.</p>
+    <ul>
+        <li>내과</li>
+        <li>
+            <a href="">이비인후과</a>
+        </li>
+        <li>정형외과</li>
+        <li>피부과</li>
+    </ul>
+</body>
+</html>

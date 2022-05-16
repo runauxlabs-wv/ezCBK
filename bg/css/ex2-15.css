@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+a { color: dodgerblue; }
+/* 기본형 */
+
+a:link { color: red; }
+/* a의 속성 href가 선언되었을때 */
+b:link { color: blueviolet;}
+
+a:visited { color: green; }
+/* a의 링크가 오픈 된 이력(방문한 경우)이 있을때 */
+
+/* ---------------절취선, 위로 링크 전용 */
+
+a:hover { color: orange; }
+/* 마우스가 해당 객체에 올려져있을때 */
+
+a:active { color: pink; }
+/* 마우스가 해당 객체를 누르고 있을때 */
+
+a:focus { color: blue; }
+/* 마우스동작시 티는 나지 않음, 키보드 tab키로 포커싱 이동시 */
+/* focus가 선언되면 active를 포함한다 */
+
+
+/* a링크 태그가 아닌 일반 객체에서 허용되는 가상선택자
+        :hover, :active, :focus */
+
+.exBox {
+    width: 300px;
+    height: 200px;
+    background: blanchedalmond;
+    cursor: pointer;
+}
+
+.exBox:hover {
+    width: 150px;
+    height: 100px;
+    background: chocolate;
+    border: 3px solid pink;
+    transition: all 0.5s;
+}
+
+.exBox:active {
+    background: rebeccapurple;
+    border: none;
+    width: 50px;
+    height: 50px;
+    transition: all 0.5s;
+}
+.exBox:focus {
+    background: #ccc;
+    width: 350px;
+    height: 350px;
+    color: crimson;
+    transition: all 0.5s;
+}
+
+.bbox{
+    width: 200px;
+    height: 200px;
+    background: pink;
+    cursor: pointer;
+}
+.bbox:hover{
+    width: 300px;
+    height: 300px;
+    background: blanchedalmond;
+    transition: all 0.5s;
+}
+.bbox:focus{
+    width: 500px;
+    height: 500px;
+    background: rebeccapurple;
+}
+/* 일반객체에는 가상 클래스 선택자로 :hover, :active를 선언할 수 있다. 보완하여 :focus도 선언할 수 있다. 기본값 다음에 기재하여, 겹치는 속성이 최신 내용으로 변경되는 개념을 적용한 것이다. css3속성을 이용하여 애니메이션 처럼 보이게 만들수도 있다. */

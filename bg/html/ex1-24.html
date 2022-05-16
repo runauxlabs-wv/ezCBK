@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>폼</title>
+    <style>
+        table{width: 100%;
+            border-collapse: collapse}
+        td,th{border: 1px solid grey;
+                padding: 10px;}
+    </style>
+</head>
+<body>   
+<form>
+    <fieldset>
+        <legend>test</legend>
+        <p>아이디 : <input type="text" maxlength="10"></p>
+        <p>비밀번호 : <input type="password"></p>
+        <p>검색 : <input type="search"></p>
+        <p>이메일 : <input type="email"></p>
+        <p>컬러선택 : <input type="color"></p>
+        <p>수량 : <input type="number" min="1" max="7" value="1"></p>
+        <p>만족도 : <input type="range" min="1" max="10" value="1"></p>
+        <input type="radio" name="dd" id="ee">
+        <label for="ee">YES</label>
+        <input type="radio" name="dd" id="ww">
+        <label for="ww">NO</label>
+        <p>test<input type="checkbox" checked="checked" disabled="disabled">
+            <!-- disabled는 비활성화, readonly 또한 읽기 전용이나 체크박스나 라디오를 제외한 input에서 사용가능하다 -->
+           test2<input type="checkbox"></p>
+           <p><input type="submit" value="전송"></p>
+           <p><input type="submit" value="취소"></p>
+           <p><input type="button" value="확인">
+                <button>html5버튼</button></p>
+            <p><input type="image" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjAxMTlfOTkg%2FMDAxNjQyNTYxNjE3Mjkz.afeg6kLn8Rrn7aouoixRXs6CJyARLdYpVsg3tbJxLL0g.v7qURgjDcjD4S3cvB3fsL5xyEbeqGFpwxqjaJNauPyQg.JPEG.wlstnr78%2F20210619%25A3%25DF113906.jpg&type=sc960_832" alt="전송"></p>
+        <p><input type="file"></p>
+        <!-- 모든파일선택가능 -->
+        <p><input type="file" accept=".png,.jpg"></p>
+        <!-- png jpg 만 가능 -->
+        <p><input type="hidden" value="확인"></p>
+        
+    </fieldset>
+</form>
+
+<br><br><br>
+
+
+<fieldset>
+    <legend>가입목적</legend>
+    <p>
+        가입목적 : <br>
+        <textarea rows="10" cols="100"></textarea>
+        <textarea></textarea>
+    </p>
+<select>
+    <option selected="selected">지역번호</option>
+    <option>043</option>
+    <option>044</option>
+</select>
+
+</fieldset>
+
+<br><br><br>
+<table>
+<h1>회원가입 입력</h1>
+<tr>
+    <th scope="row"><label for="id">아이디</label></th>
+    <td><input type="text" id="id" title="아이디 입력"></td>
+</tr>
+<tr>
+    <th scope="row"><label for="pw">비밀번호</label></th>
+    <td><input type="password" id="pw" title="비밀번호 입력"></td>
+</tr>
+<tr>
+    <th scope="row"><label for="r_pw">비밀번호 재입력</label></th>
+    <td><input type="password" id="r_pw" title="비밀번호 재입력"></td>
+</tr>
+<tr>
+    <th scope="row"><label for="mail">이메일</label></th>
+    <td><input type="email" id="mail" title="이메일아이디 입력"> @ <input type="text" title="이메일주소입력"></td>
+</tr>
+<th scope="row"><label for="hp">핸드폰 번호</label></th>
+<td>
+    <select>
+        <option selected="selected">선택</option>
+        <option>011</option>
+        <option>010</option>
+    </select>
+    <input type="text" title="휴대폰 중간자리"> -
+    <input type="text" title="휴대폰 뒷자리">
+    </td>
+    <tr>
+<th scope="row"><label for="수신여부">광고성 안내 DM 수신여부</label></th>
+<th>
+    <input type="radio" name="11" id="22">
+    <label for="22">예</label>
+    <input type="radio" name="33" id="44">
+    <label for="44">아니오</label>
+</th>
+</tr>
+</table>
+<span>회원가입 작성이 완료 되셨으면, 아래의 버튼을 눌러주세요</span>
+
+</body>
+</html>

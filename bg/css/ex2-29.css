@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+p {
+    border: 1px solid #000;
+    /* vertical-align: middle; */
+}
+div {
+    border: 1px solid #000;
+    vertical-align: middle;
+    height: 500px;
+}
+/* 블록요소의 날것의 글씨에는 vertical-align이 적용되지 않음 */
+
+/* vertical-align의 기본값은 bottom */
+
+.valign img {
+    vertical-align: middle;
+}
+/* .valign img { vertical-align: top; } */
+/* img에 속성을 적용했지만, 옆에있는 텍스트가 정렬되는것처럼 보인다. 인라인 요소가 여러개일때 구분할수있는 정렬모양이 나온다.  */
+/* 인라인 요소가 나란히 배치 되었을때 정렬하면 유용하다 */
+
+/* .valign span {
+    vertical-align: top; */
+}
+/* span은 top, 나머지는 bottom */
+/* .valign span{ vertical-align: middle; }
+.valign span{ vertical-align: bottom; } */
+/* 두 선언 모두 bottom */
+.f1 {border: 1px solid red;
+height: 300px;}

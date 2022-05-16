@@ -1,0 +1,55 @@
+@charset "utf-8"; 
+*{padding: 0;
+margin: 0;}
+.clear::after{content: ""; display: block; clear: both;}
+h1{letter-spacing: 20px;
+text-align: center;
+color: white;
+font-size: 70px;}
+.bf{text-align: center;
+color: skyblue;
+font-size: 35px;}
+.p1{text-align: center;
+width: 500px;
+display: block;
+margin: 0 auto;
+color: white;}
+.center{justify-content: center; margin-left: 150px; color: white;}
+.h2size{display: flex; padding-right: 160px;
+    font-size: 50px;}
+.box{display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 35px;
+    text-align: center;
+background-color: skyblue;
+color: white;
+margin: 0 auto;}
+.bg{background-image: url(../img/LC/lc1.png);
+background-repeat: no-repeat;
+background-size: 100% 500px;
+height: 400px;
+padding-top: 50px;}
+.color{color: white;}
+.tbox{width: 500px;
+    display: block;}
+.bold{font-weight: bold; font-size: 25px;}
+.sec1{display: flex; height: 400px;}
+.pro{display: flex; flex-direction: column; justify-content: center; align-items: flex-end; margin: 0 50px 0 0;
+    width: 49.2%; position: relative; left: 70px;}
+.bg2{width: 50.8%; background-color: skyblue; background-size: 100px; padding-top: 30px; padding-left: 20px;}
+.box2{display: block; border: 1px solid white; background-color: skyblue; width: 150px; text-align: center; position: absolute; bottom: 10px; right: 10px;}
+.bg5{width: 50%; background-color: rgb(172, 172, 172); display: flex; justify-content: right; padding-top: 50px;}
+.pro2{width: 50%; height: 450px; display: flex; flex-direction: column;}
+.bg3{background-image: url(../img/LC/lc3.png); background-repeat: no-repeat;
+    width: 400px; height: 300px; padding-left: 10px; padding-top: 10px; position: relative;}
+.wht{color: white;}
+.bg4{background-image: url(../img/LC/lc4.png); background-repeat: no-repeat; overflow: auto;
+    width: 400px; height: 300px; padding-left: 10px; padding-top: 10px;}
+.box3{display: block; border: 1px solid white; background-color: skyblue; width: 150px; text-align: center; position: relative; left: 230px;}
+.sec2{display: flex; justify-content: center;}
+.bg7{background-image: url(../img/LC/lc5.png);
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+    height: 400px;
+    padding-top: 50px;}

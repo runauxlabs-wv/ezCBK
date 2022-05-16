@@ -1,0 +1,176 @@
+@charset "utf-8";
+@import url("https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+		/* Material Icons Outlined*/
+* {margin: 0; padding: 0; font-family: 'Manrope', sans-serif; color: white;}
+body{background-color: black;}
+a{text-decoration: none;}
+.logo{display: flex; color: white; align-items: center; font-size: 1.2rem; position: absolute; left: 20px;}
+.logo img{width: 50px; height: 50px;}
+.logotext{margin-left: 40px; padding-right: 10px; border-right: solid rgb(73, 73, 73) 1px; letter-spacing: -1px; text-align: right; line-height: 90%;}
+.logotext2{color: gray;}
+.nav{display: flex; list-style-type: none; font-size: 1.2rem; position: relative; width: 100%; padding-left: 250px;}
+.nav a{color: grey;}
+.nav li{width: 150px; text-align: center;}
+ul.nav > li.all{width: 100%;
+                height: 0;
+                line-height: unset;
+                background: rgb(34, 34, 34);
+                position: absolute; left: 0; top: 49px; display: flex; overflow-y: hidden; padding-left: 250px;}
+ul.nav > li.all > .submenu{list-style-type: none; width: 150px; text-align: center; font-size: 15px; padding-top: 20px;}
+ul.nav > li.all > .submenu > li{height: 40px; line-height: 40px;}
+ul.nav > li.all > .submenu > li > a{color: gray;}
+ul.nav > li.all > .submenu > li > a:hover{color: white; border-bottom: solid white 2px; padding-bottom: 5px; transition: 0.5s;}
+.top:hover .all{height: 250px; transition: height 0.5s;}
+.nav2{display: flex; list-style-type: none; font-size: 1.2rem; position: absolute; right: 20px;}
+.nav2 a{color: grey;}
+.nav2 a::after{ content: "";
+    width: 1px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    margin: 0 30px;}
+    .nav2 li:last-child a::after{display: none;}
+.korean{display: flex; width: 100px; justify-content: space-between; border-bottom:solid grey 1px;}
+.korean span{color: grey;}
+.head{display: flex; align-items: center; justify-content:center; width: 100%; height: 70px; margin: 0 auto; position: relative;}
+.top{width: 100%; height: 70px; position:fixed; top: 0; z-index:100;}
+/* .top:hover{width: 100%; height: 70px; line-height: unset; background-color: gray; transition: height 0.2s;} */
+/* .top:hover{background-color: grey;} */
+.top:hover{background-color: rgb(34, 34, 34); border-bottom: solid rgb(122, 122, 122) 1px;}
+.top:hover .nav a{color: rgb(255, 255, 255);}
+.top:hover .nav2 a{color: rgb(255, 255, 255);}
+.top:hover .korean span{color: rgb(255, 255, 255);}
+.top:hover .nav2 a::after{background: rgb(255, 255, 255);}
+.top:hover .logotext{color: rgb(255, 255, 255);}
+.top:hover .logotext2{color: rgb(204, 204, 204);}
+.sec1nav{display: flex; list-style-type: none; justify-content: space-between; width: 80%; text-align: center; font-size: 20px; position: absolute; bottom: 10%; border-top: solid grey 1px; left: 150px; padding: 20px;}
+.sec01{height: 600px; position: relative; background: url(../img/benzkorea/bg11.png); background-position: center; background-size: cover; margin-top: 70px;}
+.sec01text{font-size: 40px; font-weight: bold; position: absolute; left: 150px; top: 140px;}
+.sec01text2{font-size: 20px; font-weight: 130; color: rgb(255, 255, 255);}
+.sec1nav a{color: rgb(207, 207, 207);}
+.sec1nav a:hover{color: white;}
+.test{font-size: 25px; position: absolute; bottom: 50%; left: 150px; color: rgb(255, 255, 255);}
+h1{text-align: center; font-size: 50px; font-weight: 10; margin-top: 250px;}
+.newsbottom{margin-left: 80px; text-align: center; font-size: 25px; letter-spacing: 7px; color: gray;}
+.button02{border-top: solid black 1px;}
+.leftbutton{position: absolute; top: 40%; left: 150px;}
+.rightbutton{position: absolute; top: 40%; right: 150px;}
+.nemo3{display: block; width: 20px; height: 3px; background-color: gray;}
+.control{display: flex; width: 170px; height: 30px; justify-content: center; align-items:center; font-size: 15px; padding-left: 37px;}
+.controlsize{font-size: 30px;}
+.page{font-size: 25px; margin: 0 5px;}
+.txt{margin-top: 50px; margin-left: -30px;}
+.txt span{color: black;}
+.nemo3flex{display: flex;}
+.sec02{width: 1500px; height: 800px; margin: 0 auto;}
+.sec02 h2{font-size: 40px;}
+.sec02text{display: flex; flex-direction: column; padding-top: 150px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.small{font-size: 15px; color: antiquewhite;}
+.youtubebox{display: flex; flex-direction: column; width: 400px; height: 270px; margin-right: 40px; font-size: 20px; padding-top: 20px;}
+.youtubebox img{border: solid rgb(255, 255, 230) 5px; width: 350px; height: 200px;}
+.sec021{display: flex; width: 500px; height: 60%; flex-direction: column; align-items:flex-start; justify-content: center; border-right: solid gray 1px;}
+.sec021 p > span{font-size: 40px; color: gray;}
+.sec022{display: flex; width: 100%; overflow: hidden; padding-left: 30px;}
+.sec02end{display: flex; width: 100%; height: 800px; align-items: center;}
+.sec021 p{font-size: 70px; color: white; line-height: 60px;}
+.sec021inner{display: flex; width: 95%; margin: 0 auto;}
+.sec03{width: 100%; height: 1000px; background-image: url(../img/benzkorea/Bg6.png); background-repeat: no-repeat; background-size:cover; background-position: center; position: relative;}
+.sec03text{font-size: 90px;}
+.sec03text2{font-size: 40px; letter-spacing: 10px; color: gray;}
+.sec03textend{line-height: 90px; position: absolute; top: 80px; right: 100px;}
+.button{position: absolute; bottom: 50px; left: 50%;}
+.button span{color: rgb(223, 223, 223);}
+.button > a > span:hover{color: white;}
+.button2{position: absolute; left: 50%; bottom: 270px;}
+.button2 span{color: white;}
+.pause span{color: white; margin-left: 20px;}
+.nemo{display: block; width: 45px; height: 5px; background-color: rgb(170, 170, 170); border-radius: 50px 0; margin: 0 3px;}
+.nemo:hover{background-color: white;}
+.searchbox input{width: 200px; height: 30px; border: solid white 1px; background-color: black; padding: 5px;}
+.search{display: block; width: 40px; height: 40px; line-height: 40px; background-color: gray; font-size: 35px; border: solid white 1px;}
+.sub04{text-align: center; line-height: 60px; padding-bottom: 50px;}
+.sub041{font-size: 40px; color: rgb(155, 155, 155); letter-spacing: 8px;}
+.sub042{font-size: 90px; color: rgb(255, 255, 255); letter-spacing: 10px;}
+.sub05{display: flex; justify-content: space-between; position: relative; width: 100%;}
+
+.sub051{position: relative;}
+.sub05 > .sub051 img{width: 620px; height: 600px;}
+.hovertext{width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute; left: 0; 
+    top: 0; display: flex; 
+    overflow-y: hidden; transition: 0.3s;}
+.sub05text{display: flex; flex-direction: column; padding: 50px;}
+.sub051:hover .hovertext{height: 100%;}
+
+.sub052{position: relative;}
+.sub05 > .sub052 img{width: 620px; height: 600px; margin: 0 10px;}
+.hovertext2{width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute; left: 0; 
+    top: 0; display: flex; 
+    overflow-y: hidden;
+    margin: 0 10px; transition: 0.3s;}
+.sub05text2{display: flex; flex-direction: column; padding: 50px;}
+.sub052:hover .hovertext2{height: 100%;}
+
+.sub053{position: relative;}
+.sub05 > .sub053 img{width: 620px; height: 600px;}
+.hovertext3{width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute; left: 0; 
+    top: 0; display: flex; 
+    overflow-y: hidden; transition: 0.3s;}
+.sub05text3{display: flex; flex-direction: column; padding: 50px;}
+.sub053:hover .hovertext3{height: 100%;}
+.sub04end{width: 100%; height: 800px; padding-top: 200px;}
+
+.sub05p{font-size: 50px; margin-bottom: 50px; margin-top: 100px;}
+.sub05p2{font-size: 15px; margin-bottom: 40px; color: rgb(214, 214, 214); word-spacing: 5px;}
+.sub05box{ border: solid white 1px; padding: 5px 15px; font-size: 20px;}
+.sub05box:hover{background-color: gray; border: none; transition: 0.5s;}
+
+.sb{display: flex; align-items: center; margin-left: 50px;}
+.sel{display: flex; justify-content: center; margin-bottom: 50px; margin-top: 10px;}
+.sel span{color: gray;}
+.sel span:hover{color: white;}
+.sec04text{display: block; width: 350px; text-align: center; height: 30px; line-height: 30px; border: solid white 1px;}
+.sec04box{display: flex; flex-direction: column; width: 350px; height: 330px; padding: 40px 60px; border-collapse:separate;}
+.testbox a:hover{background-color: rgb(54, 54, 54); border: none;}
+.testbox a:first-child{border-bottom: none;}
+.sec04box p{margin-bottom: 40px;}
+.sec04box:hover{background-color: rgb(110, 110, 110); transition: 0.8s;}
+.sidemenu{width: 10%; text-align: center; font-size: 25px; border-right: solid rgb(175, 175, 175) 1px;}
+.sidemenu a{color: gray;}
+.sidemenu a:hover{color: white;}
+.sidemenu li{margin: 20px 0; font-size: 30px;}
+.sec04{display: flex; margin-top: 50px;}
+.sec04inner{display: flex; flex-wrap: wrap; width: 1600px; margin-left: 40px;}
+.sns{display: flex;}
+.sns img{padding: 0 10px; opacity: 40%;}
+.sns img:hover{opacity: 100%;}
+.foot1{display: flex; align-items: center; padding: 20px; justify-content:space-around; margin: 0 auto;}
+.foot1 p{color: gray;}
+.footlogo{width: 65px; height: 65px; opacity: 70%;}
+.footlogo1{display: flex; flex-direction: column; width: 1200px; justify-content: center; margin: 0 auto; padding: 20px 0; align-items: center; text-align: center;}
+.foottext{color: rgb(126, 126, 126); padding-top: 10px;}
+.foot2{display: flex; flex-wrap: wrap; justify-content: left; margin: 0 auto; padding: 20px 0;} 
+.foot2 p{margin: 0 5px; color: rgb(53, 53, 53);}
+.footend{display: flex; border-top: solid rgb(82, 82, 82) 1px; width: 1800px; margin: 0 auto; justify-content: space-between;}
+.foot2 p:hover{color: white;}
