@@ -33,7 +33,7 @@ ul.nav > li.all > .submenu > li > a:hover{color: white; border-bottom: solid whi
 .korean{display: flex; width: 100px; justify-content: space-between; border-bottom:solid grey 1px;}
 .korean span{color: grey;}
 .head{display: flex; align-items: center; justify-content:center; width: 100%; height: 70px; margin: 0 auto; position: relative;}
-.top{width: 100%; height: 70px; position:fixed; top: 0; z-index:100; background-color: black;}
+.top{width: 100%; height: 70px; position:fixed; top: 0; z-index:100;}
 /* .top:hover{width: 100%; height: 70px; line-height: unset; background-color: gray; transition: height 0.2s;} */
 /* .top:hover{background-color: grey;} */
 .top:hover{background-color: rgb(34, 34, 34); border-bottom: solid rgb(122, 122, 122) 1px;}
@@ -55,26 +55,60 @@ ul.nav > li.all > .submenu > li > a:hover{color: white; border-bottom: solid whi
 .test{font-size: 25px; position: absolute; bottom: 50%; left: 150px; color: rgb(255, 255, 255);}
 h1{text-align: center; font-size: 50px; font-weight: 10; margin-top: 250px;}
 .button02{border-top: solid black 1px;}
-.sec02{height: 600px; position: relative; background-color: white;}
+.sec02{height: 600px; position: relative;}
+.sec02inner{width: 1400px; margin: 0 auto; position: relative;}
 .sec02text{padding-top: 100px;}
-.sec02text p{color: black; text-align: center; font-size: 35px; font-weight: bolder; line-height: 35px;}
-.sec02text span{color: gray; font-size: 15px; font-weight: 500; margin-right: 470px; border-bottom: solid black 1px;}
-.sec02text2 p{color: gray; text-align: center; margin-top: 80px;}
-.sec02text2 a{color: rgb(99, 99, 99); font-size: 20px; border: solid rgb(155, 155, 155) 1px; padding: 6px 20px;}
-.sec02baro{display: block; width: 200px; padding: 10px; border: solid rgb(143, 143, 143) 1px; text-align: center; margin: 40px 0; font-size: 20px;}
-.nemo3{display: block; width: 20px; height: 3px; background-color: gray;}
-.control{display: flex; width: 170px; height: 30px; justify-content: center; align-items:center; font-size: 15px; padding-left: 37px;}
-.controlsize{font-size: 30px;}
+.sec02text p{color: rgb(255, 255, 255); text-align: center; font-size: 35px; font-weight: bolder; line-height: 35px;}
+.sec02text span{color: rgb(255, 255, 255); font-size: 15px; font-weight: 500; margin-right: 470px; border-bottom: solid rgb(255, 255, 255) 1px;}
+.sec02text2 p{color: rgb(255, 255, 255); text-align: center; padding-top: 80px;}
+.sec02text2 a{color: rgb(255, 255, 255); font-size: 20px; border: solid rgb(255, 255, 255) 1px; padding: 6px 20px;}
+.sec02plus{width: 100%; height: 900px; background-color: white;}
+.sec02button{text-transform: uppercase;
+    padding: 5px;
+    font-size: 20px;
+    color: rgb(197, 197, 197);
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display:inline-block;}
+.sec02button{border:1px solid transparent; -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1); transition: all 0.4s cubic-bezier(.5, .24, 0, 1);}
+.sec02button::before {content: ''; position: absolute; left: 0px; bottom:0px; z-index:-1; width: 0%; height:2px; background: #ffffff; box-shadow: inset 0px 0px 0px #ffffff; display: block; -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1); transition: all 0.4s cubic-bezier(.5, .24, 0, 1)}
+.sec02button:hover::before {width:100%;}
+.sec02button::after {content: ''; position: absolute; right: 0px; top:0px; z-index:-1; width: 0%; height:2px; background: #ffffff; -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1); transition: all 0.4s cubic-bezier(.5, .24, 0, 1)}
+.sec02button:hover::after {width:100%;}
+.sec02button:hover{border-left:2px solid #ffffff; border-right:2px solid #ffffff; color: white;}
+.buttonxy{position: absolute; left: 45%; bottom: -100px;}
+.plus{color: black; font-size: 400px; text-align: center;padding-top: 130px;}
 .txt{margin-top: 50px; margin-left: -30px;}
 .txt span{color: black;}
-.sec03{display: flex; flex-direction: column; width: 100%; height: 1000px; position: relative; background: url(../img/benzkorea/sec02bg.png) no-repeat; background-size: cover; background-position: center;}
-.sec03text{padding-top: 80px; height: 350px;}
+.secplus{width: 100%; height: 80vh; position: relative;}
+.secplustext{position: absolute; bottom: 250px; left: 250px; z-index: 100; font-size: 23px; border-bottom: solid white 2px;}
+.secplustext2{position: absolute; bottom: 250px; z-index: 100; left: 100px; font-size: 23px; border-bottom: solid white 2px;}
+.swiper.basic2{margin-left: 0; margin-right: 0; width: 100%; height: 80vh;}
+.plus1{background: url(../img/benzkorea/plus1.png) no-repeat; background-size: cover; width: 100%; height: 80vh; font-size: 50px; position: relative;}
+.plus1 span{font-size: 22px; color: rgb(185, 185, 185);}
+.plus1text{position: absolute; left: 100px; top: 200px;}
+.plus2{background: url(../img/benzkorea/plus2.jpeg) no-repeat; background-size: cover; width: 100%; height: 80vh; font-size: 50px; position: relative;}
+.plus3{background: url(../img/benzkorea/plus3.jpeg) no-repeat; background-size: cover; width: 100%; height: 80vh; font-size: 50px; position: relative;}
+.plus4{background: url(../img/benzkorea/plus4.jpeg) no-repeat; background-size: cover; width: 100%; height: 80vh; font-size: 50px; position: relative;}
+.sec03{width: 100%; height: 690px; position: relative;}
+.sec03inner{width: 1400px; margin: 0 auto;}
+.sec03left{display: flex; font-size: 20px; height: 140px; line-height: 140px;}
+.sec03left span{font-size: 35px; margin-left: 10px;}
+.sec03right{display: flex; flex-direction: column; justify-content: center; text-align: right;}
+.sec03right p{font-size: 22px; font-weight: bold;}
+.sec03right span{font-size: 15px; color: rgb(194, 194, 194);}
+.sec03one{display: flex; height: 90px; width: 1400px; height: 140px; justify-content: space-between; margin: 0 auto;}
+/* .sec03text{padding-top: 80px; height: 350px;}
 .sec03text p{text-align: center; font-size: 33px; font-weight: bolder; line-height: 40px;}
 .sec03text span{color: rgb(138, 138, 138); font-size: 17px; font-weight: 500; margin-right: 490px; border-bottom:  solid rgb(161, 161, 161) 1px;}
 .sec03img{display: flex; width: 100%; position: absolute; bottom: 0; height: 550px;}
 .sec03text2 p{font-size: 17px; line-height: 25px; margin-top: 50px; font-weight: 100; color: gainsboro;}
+
+
+
 .sec03img img{width: 25%;}
-.testt{display: flex; width: 100%; height: 650px;}
+.testt{display: flex; width: 100%; height: 450px;}
 .testt p{text-align: center; font-size: 20px; padding-top: 250px; color: gainsboro; margin: 0 auto;}
 .testbg1{background: url(../img/benzkorea/sub41.png) no-repeat; position: relative; width: 25%; background-size: cover; background-position: center;}
 .testbg2{background: url(../img/benzkorea/sub0441.png) no-repeat; position: relative; width: 25%; background-size: cover; background-position: center;}
@@ -122,16 +156,79 @@ h1{text-align: center; font-size: 50px; font-weight: 10; margin-top: 250px;}
     position: absolute; left: 0; 
     top: 0;
     overflow-y: hidden;}
-.sec03 > .testt > .testbg4:hover .hovertest4{height: 597px;}
+.sec03 > .testt > .testbg4:hover .hovertest4{height: 597px;} */
 .hovertest4 p{color: white; font-size: 20px;}
-.sec3{height: 1000px; background-color: antiquewhite;}
+.sec3{height: 1300px;}
+.sec3button{text-transform: uppercase;
+    padding: 5px;
+    font-size: 15px;
+    color: rgb(184, 184, 184);
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    display:inline-block;}
+.sec3button{border:1px solid transparent; -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1); transition: all 0.4s cubic-bezier(.5, .24, 0, 1);}
+.sec3button::before {content: ''; position: absolute; left: 0px; bottom:0px; z-index:-1; width: 0%; height:2px; background: #ffffff; box-shadow: inset 0px 0px 0px #ffffff; display: block; -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1); transition: all 0.4s cubic-bezier(.5, .24, 0, 1)}
+.sec3button:hover::before {width:100%;}
+.sec3button::after {content: ''; position: absolute; right: 0px; top:0px; z-index:-1; width: 0%; height:2px; background: #ffffff; -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1); transition: all 0.4s cubic-bezier(.5, .24, 0, 1)}
+.sec3button:hover::after {width:100%;}
+.sec3button:hover{color: white;}
+/* .sec3button:hover{border-left:2px solid #ffffff; border-right:2px solid #ffffff;} */
+.sec3title{border-top: solid white 4px; font-size: 33px; font-weight: bold;}
+.sec3top{display: flex; justify-content: space-between; align-items: center; font-size: 25px; margin-top: 30px;}
 
-
-
-
-
-
-
+.sec3text{color: rgb(184, 184, 184); font-size: 15px; margin: 20px 0;}
+.sec3img{display: flex;}
+.sec3img1{width: 380px; height: 400px; object-fit: cover; object-position: 25%; margin-right: 20px;}
+.sec3img2{width: 400px; height: 400px; object-fit: cover; object-position: 95%;}
+.sec3img3{width: 800px; height: 500px; object-fit: cover; object-position: 75% 50%; margin-bottom: 20px;}
+.sec3img4{width: 600px; height: 830px; object-fit: cover; object-position: 30%;}
+.sec3left{display: flex; flex-direction: column; width: 800px;}
+.sec3right{display: flex; flex-direction: column; width: 600px; margin-left: 20px;}
+.sec3inner{display: flex; width: 1400px; margin: 0 auto; padding-top: 100px; position: relative;}
+.sec4{width: 100%; height: 900px; background: url(../img/benzkorea/sec3bg.png) no-repeat; background-size:cover; background-position: 50%; position: relative;}
+.sec4inner{width: 1400px; margin: 0 auto; position: relative; overflow: hidden;}
+.sec4text{line-height: 35px; padding: 30px 0;}
+.sec4text2{position: absolute; right: 100px; top: 300px; font-size: 30px; color: rgb(255, 255, 255);}
+.sec4button{text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 3px;
+    color: rgb(201, 201, 201);
+    font-size: 18px;
+    display:inline-block;}
+.sec4button::before{
+        content: '';
+        position: absolute;
+        bottom: 0%;
+        left: 0px;
+        width: 100%;
+        height: 2px;
+        background: #fafafa;
+        display: block;
+        -webkit-transform-origin: right top;
+        -ms-transform-origin: right top;
+        transform-origin: right top;
+        -webkit-transform: scale(0, 1);
+        -ms-transform: scale(0, 1);
+        transform: scale(0, 1);
+        -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
+        transition: transform 0.4s cubic-bezier(1, 0, 0, 1)}
+.sec4button:hover::before {
+        -webkit-transform-origin: left top;
+        -ms-transform-origin: left top;
+        transform-origin: left top;
+        -webkit-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        transform: scale(1, 1)}
+.sec4button:hover{color: white;}
+.po1{position: absolute; right: 100px; top: 430px;}
+.po2{position: absolute; right: 100px; top: 480px;}
+.po3{position: absolute; right: 100px; top: 530px;}
+.sec4text p{font-size: 40px; font-weight: bolder;}
+.sec4text span{color: rgb(173, 173, 173); font-size: 15px; font-weight: 500; border-bottom: solid rgb(173, 173, 173) 1px;}
+.heighttext{position: absolute; left: 560px; top: 395px; transform:rotate(90deg); letter-spacing: 5px;}
 .button{position: absolute; bottom: 50px; left: 50%;}
 .button span{color: rgb(223, 223, 223);}
 .button > a > span:hover{color: white;}
@@ -143,52 +240,7 @@ h1{text-align: center; font-size: 50px; font-weight: 10; margin-top: 250px;}
 .nemo2{display: flex; justify-content: center; margin: 0 auto; margin-top: 50px;}
 .searchbox input{width: 200px; height: 30px; border: solid white 1px; background-color: black; padding: 5px;}
 .search{display: block; width: 40px; height: 40px; line-height: 40px; background-color: gray; font-size: 35px; border: solid white 1px;}
-.sub04{text-align: center; line-height: 60px; padding-bottom: 50px;}
-.sub041{font-size: 40px; color: rgb(155, 155, 155); letter-spacing: 8px;}
-.sub042{font-size: 90px; color: rgb(255, 255, 255); letter-spacing: 10px;}
-.sub05{display: flex; justify-content: space-between; position: relative; width: 100%;}
-
-.sub051{position: relative;}
-.sub05 > .sub051 img{width: 620px; height: 600px;}
-.hovertext{width: 100%;
-    height: 0;
-    background: rgba(0, 0, 0, 0.7);
-    position: absolute; left: 0; 
-    top: 0; display: flex; 
-    overflow-y: hidden; transition: 0.3s;}
-.sub05text{display: flex; flex-direction: column; padding: 50px;}
-.sub051:hover .hovertext{height: 100%;}
-
-.sub052{position: relative;}
-.sub05 > .sub052 img{width: 620px; height: 600px; margin: 0 10px;}
-.hovertext2{width: 100%;
-    height: 0;
-    background: rgba(0, 0, 0, 0.7);
-    position: absolute; left: 0; 
-    top: 0; display: flex; 
-    overflow-y: hidden;
-    margin: 0 10px; transition: 0.3s;}
-.sub05text2{display: flex; flex-direction: column; padding: 50px;}
-.sub052:hover .hovertext2{height: 100%;}
-
-.sub053{position: relative;}
-.sub05 > .sub053 img{width: 620px; height: 600px;}
-.hovertext3{width: 100%;
-    height: 0;
-    background: rgba(0, 0, 0, 0.7);
-    position: absolute; left: 0; 
-    top: 0; display: flex; 
-    overflow-y: hidden; transition: 0.3s;}
-.sub05text3{display: flex; flex-direction: column; padding: 50px;}
-.sub053:hover .hovertext3{height: 100%;}
-.sub04end{width: 100%; height: 800px; padding-top: 200px;}
-
-.sub05p{font-size: 50px; margin-bottom: 50px; margin-top: 100px;}
-.sub05p2{font-size: 15px; margin-bottom: 40px; color: rgb(214, 214, 214); word-spacing: 5px;}
-.sub05box{ border: solid white 1px; padding: 5px 15px; font-size: 20px;}
-.sub05box:hover{background-color: gray; border: none; transition: 0.5s;}
-
-.sb{display: flex; align-items: center; margin-left: 50px;}
+.sb{display: flex; align-items: center; margin-left: 50px; margin-top: 200px;}
 .sel{display: flex; justify-content: center; margin-bottom: 50px; margin-top: 10px;}
 .sel span{color: gray;}
 .sel span:hover{color: white;}
@@ -207,6 +259,7 @@ h1{text-align: center; font-size: 50px; font-weight: 10; margin-top: 250px;}
 .sns{display: flex;}
 .sns img{padding: 0 10px; opacity: 40%;}
 .sns img:hover{opacity: 100%;}
+.snstube{width: 50px; height: 42px;}
 .foot1{display: flex; align-items: center; padding: 20px; justify-content:space-around; margin: 0 auto;}
 .foot1 p{color: gray;}
 .footlogo{width: 65px; height: 65px; opacity: 70%;}
@@ -216,3 +269,45 @@ h1{text-align: center; font-size: 50px; font-weight: 10; margin-top: 250px;}
 .foot2 p{margin: 0 5px; color: rgb(53, 53, 53);}
 .footend{display: flex; border-top: solid rgb(82, 82, 82) 1px; width: 1800px; margin: 0 auto; justify-content: space-between;}
 .foot2 p:hover{color: white;}
+.testtest{display: block; width: 100%; height: 100%; background-color: antiquewhite;}
+.swiper.basic{margin-left: 0; margin-right: 0; margin-top: 100px;
+    width: 700px;
+    height: 500px;
+    color: white;
+    background-color: antiquewhite;}
+.sec4inner .swiper-pagination{text-align:center; position: absolute; bottom: 75px; left: 55px; font-size: 25px;}
+.sec4inner .swiper-button-next{position: absolute; top: 700px; right: 610px; color: white;}
+.sec4inner .swiper-button-prev{position: absolute; top: 700px; left: 720px; color: white;}
+.swiper1{background: url(../img/benzkorea/youtube2.png) no-repeat; background-size: cover; position: relative;}
+.swiper2{background: url(../img/benzkorea/youtube3.png) no-repeat; background-size: cover; position: relative;}
+.swiper3{background: url(../img/benzkorea/youtube4.png) no-repeat; background-size: cover; position: relative;}
+.swiper4{background: url(../img/benzkorea/youtube5.png) no-repeat; background-size: cover; position: relative;}
+.swiper5{background: url(../img/benzkorea/youtube6.png) no-repeat; background-size: cover; position: relative;}
+.swiperyou{width: 120px; position: absolute; left: 40%; top: 40%;}
+.swipertext{width: 700px; background-color: rgb(36, 36, 36, 0.5); height: 40px; text-align: center; line-height: 40px;}
+
+
+.sec03_1{width: 100%; height: 170px; text-transform: uppercase; text-align: center; position: relative; text-decoration: none; display:block; border-bottom: solid rgb(211, 211, 211) 2px;}
+.sec03_1::before {content: ''; position: absolute; left: 0px; bottom:0px; z-index:-1; width: 100%; height:100%; background:url(../img/benzkorea/sec031d.png) no-repeat; background-size: cover; background-position: 10% 10%; display: block; transition: all 0.5s cubic-bezier(.5, .24, 0, 1);}
+.sec03_1:hover::before {box-shadow: inset 0px 100vh 0px 0px rgba(0, 0, 0, 0.8); background: url(../img/benzkorea/sec031.png) no-repeat; background-size: cover; background-position: 10% 10%;}
+.sec03_1:hover > .sec03one > .sec03left span{color: rgb(255, 255, 255); transition: all 1s;}
+.sec03_1:hover > .sec03one > .sec03right p{color: rgb(255, 255, 255); transition: all 1s;}
+/* -webkit-transition: all 0.5s cubic-bezier(.5, .24, 0, 1); */
+
+.sec03_2{width: 100%; height: 170px; text-transform: uppercase; text-align: center; position: relative; text-decoration: none; display:block; border-bottom: solid rgb(211, 211, 211) 2px;}
+.sec03_2::before {content: ''; position: absolute; left: 0px; bottom:0px; z-index:-1; width: 100%; height:100%; background:url(../img/benzkorea/123123.png) no-repeat; background-size: cover; display: block; transition: all 0.5s cubic-bezier(.5, .24, 0, 1);}
+.sec03_2:hover::before {box-shadow: inset 0px 100vh 0px 0px rgba(0, 0, 0, 0.8); background: url(../img/benzkorea/sec032.png) no-repeat; background-size: cover;}
+.sec03_2:hover > .sec03one > .sec03left span{color: rgb(255, 255, 255); transition: all 1s;}
+.sec03_2:hover > .sec03one > .sec03right p{color: rgb(255, 255, 255); transition: all 1s;}
+
+.sec03_3{width: 100%; height: 170px; text-transform: uppercase; text-align: center; position: relative; text-decoration: none; display:block; border-bottom: solid rgb(211, 211, 211) 2px;}
+.sec03_3::before {content: ''; position: absolute; left: 0px; bottom:0px; z-index:-1; width: 100%; height:100%; background:url(../img/benzkorea/sec033d.png) no-repeat; background-size: cover; background-position: 40% 40%; display: block; transition: all 0.5s cubic-bezier(.5, .24, 0, 1);}
+.sec03_3:hover::before {box-shadow: inset 0px 100vh 0px 0px rgba(0, 0, 0, 0.8); background:url(../img/benzkorea/sec033.png) no-repeat; background-size: cover; background-position: 40% 40%;}
+.sec03_3:hover > .sec03one > .sec03left span{color: rgb(255, 255, 255); transition: all 1s;}
+.sec03_3:hover > .sec03one > .sec03right p{color: rgb(250, 250, 250); transition: all 1s;}
+
+.sec03_4{width: 100%; height: 170px; text-transform: uppercase; text-align: center; position: relative; text-decoration: none; display:block;}
+.sec03_4::before {content: ''; position: absolute; left: 0px; bottom:0px; z-index:-1; width: 100%; height:100%; background:url(../img/benzkorea/sec034d.png) no-repeat; background-size: cover; background-position: 80% 80%; display: block; transition: all 0.5s cubic-bezier(.5, .24, 0, 1);}
+.sec03_4:hover::before {box-shadow: inset 0px 100vh 0px 0px rgba(0, 0, 0, 0.8); background:url(../img/benzkorea/sec034.png) no-repeat; background-size: cover; background-position: 80% 80%;}
+.sec03_4:hover > .sec03one > .sec03left span{color: rgb(255, 255, 255); transition: all 1s;}
+.sec03_4:hover > .sec03one > .sec03right p{color: rgb(255, 255, 255); transition: all 1s;}
