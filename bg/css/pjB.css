@@ -1,0 +1,64 @@
+@charset "utf-8";
+@import url("https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+		/* Material Icons Outlined*/
+@keyframes phone {
+    100% {transform: translate(0,80px); opacity: 0.8;}
+    50% {transform: translate(0,60px); opacity: 1;}
+    0% {transform: translate(0,80px); opacity: 0.8;}
+        }
+@keyframes s2 {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+* {margin: 0; padding: 0; text-decoration: none;}
+:root{
+    --clr:#fbad04;--i:18px;--d:2.5s;
+    --clr:#03a1d9;--i:13px;--d:5s;
+    --clr:#f7036d;--i:15px;--d:7.5s;
+    --clr:#93ff16;--i:20px;--d:10s;
+}
+body {position: relative; height: 100%; font-family: 'Noto Sans KR', sans-serif;}
+li{list-style: none;}
+.swiper{width: 100%; height: 100vh;}
+.s1{background-color: rgb(233, 233, 233); position: relative; overflow: hidden;}
+.s1img{position: absolute; right: 0; bottom: 100px; animation: phone 5s infinite; animation-direction: reverse; z-index: 5;}
+.s1text{font-size: 100px; text-align: center; margin-top: 250px; position: relative;}
+.s1button{display: flex; height: 30px; line-height: 30px; font-size: 25px; justify-content: center; margin-left: 500px;}
+.s1button a{color: black;}
+.s1button span{font-size: 25px; margin-top: 4px; margin-left: 5px;}
+.line{width: 100%; height: 50px; border-top: solid rgb(80, 80, 80) 4px; position: absolute; bottom: 0; z-index: -1;}
+.s1textbox{display: inline-block; padding: 0 10px; background-color: rgb(233, 233, 233);}
+.logo{width: 100px; height: 100px; opacity: 0.5;}
+.nav{display: flex; text-decoration: none; list-style: none; width: 600px; justify-content: space-around; margin-left: 150px;}
+.nav a{color: rgb(121, 121, 121);}
+.logo:hover{opacity: 1;}
+.nav > li > a:hover{color: white;}
+.head{display: flex; align-items: center; position: fixed; z-index: 100; width: 100%; height: 60px; background-color: black}
+.s2{position: relative; display: flex;}
+.s2left{width: 40%; height: 100vh;}
+.s2right{width: 60%; height: 100vh; background-color: black; position: relative;}
+.s2textbox{position: absolute; top: 100px; left: 100px; display: block; width: 750px; height: 700px; font-size: 55px; text-align: left; color: gray;}
+.s2textbox span{color: white;}
+.s2bg{position: relative; width: 500px; height: 500px; margin: 0 auto; padding-top: 30%;}
+.s2bg span{position: absolute; width: 450px; height: 450px; background: var(--clr); border-radius: 50%; transform-origin: 100px; animation: s2 5s linear infinite; animation-duration: calc(var(--d)); mix-blend-mode:lighten; filter: blur(30px); opacity: 0.3;}
+.s2bg span:nth-child(even) {animation-direction: reverse;}
+#visual {width: 500px; margin: 0 auto; position: relative; padding-top: 230px;}
+#pic {height: 543px; overflow: hidden; position: relative;}
+#pic > div {position: absolute; left: 0; top: 0; display: none;}
+#control {position: absolute; width: 100%; left: 50px; bottom: -70px;}
+#control a {display: inline-block; width: 26px; height: 26px; background: #000; text-indent: -99999px; line-height: 26px; font-size: 0.8em; border-radius: 14px; margin: 0 2px;}
+#control a.on {border: solid rgb(170, 170, 170) 4px;}
+.s3{overflow: hidden; position: relative; background-color: rgb(0, 0, 27);}
+.s3inner{position: relative; width: 1400px; margin: 0 auto;}
+.s3box{position: absolute; top: 230px; left: 100px; z-index: 3; color: white;}
+.s3box2{position: absolute; top:480px; left: 300px; z-index: 3; color: white;}
+.s3box3{position: absolute; top: 700px; left: 100px; z-index: 3; color: white;}
+.s3box p{font-size: 18px;}
+.s3head{display: inline-block; width: 800px; border-bottom: solid rgb(255, 255, 255) 1px; font-size: 25px; margin: 10px 0;}
+.yellow{color: rgb(255, 211, 14);}
+.s3bg{position: absolute; right: -200px; padding-top: 100px; z-index: 2;}
+#control > .green{background-color: #556352;}
+#control > .silver{background-color: #EEEFE9;}
+#control > .gold{background-color: #E6D1B4;}
+#control > .graphite{background-color: #504F4B;}
+#control > .sierrablue{background-color: #97B1C8;}
