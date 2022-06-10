@@ -1,7 +1,9 @@
 @charset "utf-8";
 @import url("https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 		/* Material Icons Outlined*/
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+
+* {margin: 0; padding: 0; text-decoration: none;}
 
 @keyframes phone {
     100% {transform: translate(0,80px); opacity: 0.8;}
@@ -15,7 +17,7 @@
 }
 @keyframes btn {
     100% {transform: translate(0,0px);}
-    50% {transform: translate(10px,0px); opacity: 0.3;}
+    50% {transform: translate(5px,0px); opacity: 0.3;}
     0% {transform: translate(0,0px);}
 }
 @keyframes s2 {
@@ -32,24 +34,40 @@
     50% {opacity: 0.5;}
     100% {opacity: 1;}
 }
+@keyframes memobg1 {
+    0% {transform: translate(10%, 10%) scale(1); opacity: 0.5;}
+    25% {transform: translate(-10%, -10%) scale(0.8); opacity: 0.5;}
+    50% {transform: translate(-10%, -10%) scale(1.2); opacity: 0.8;}
+    75% {transform: translate(10%, -10%) scale(1.4); opacity: 0.5;}
+    100% {transform: translate(10%, 10%) scale(1); opacity: 0.5;}
+}
+@keyframes memobg2 {
+    0% {transform: translate(-10%, -10%) scale(1); opacity: 0.5;}
+    25% {transform: translate(10%, -10%) scale(0.8); opacity: 0.5;}
+    50% {transform: translate(10%, 10%) scale(1.2); opacity: 0.8;}
+    75% {transform: translate(-10%, 10%) scale(1.4); opacity: 0.5;}
+    100% {transform: translate(-10%, -10%) scale(1); opacity: 0.5;}
+}
 @keyframes s7line {
     0% {transform: translateX(100%);}
     50% {transform: translateX(0%);}
     100% {transform: translateX(100%);}
 }
-* {margin: 0; padding: 0; text-decoration: none;}
 :root{
     --clr:#fbad04;--i:18px;--d:2.5s;
     --clr:#03a1d9;--i:13px;--d:5s;
     --clr:#f7036d;--i:15px;--d:7.5s;
     --clr:#93ff16;--i:20px;--d:10s;
     --del:11;--del:12;--del:24;--del:15;--del:11;--del:10;--del:25;--del:27;--del:29;--del:20;--del:13;
+    --swiper-theme-color:black;
 }
 body {position: relative; height: 100%; font-family: 'Noto Sans KR', sans-serif; font-weight: 700;}
+/* body::-webkit-scrollbar {display: none;} */
+
 li{list-style: none;}
 footer{width: 100%; height: 0; overflow: hidden; transition: height 2s;}
 footer.on {height: 1400px; transition: height 2s;}
-.swiper.mySwiper{width: 100%; height: 100vh;}
+.swiper.basic{width: 100%; height: 100vh;}
 .s1{background-color: rgb(233, 233, 233); position: relative; overflow: hidden;}
 .s1img{position: absolute; right: 0; bottom: 250px; animation: phone 5s infinite; animation-direction: reverse; z-index: 5;}
 .s1text{font-size: 100px; text-align: center; margin-top: 250px; position: relative;}
@@ -58,12 +76,27 @@ footer.on {height: 1400px; transition: height 2s;}
 .scroll{font-size: 15px; animation: roll 2s infinite; position: absolute; bottom: 50px; left: 50%; z-index: 10;}
 .scroll span{font-size: 45px; padding-left: 18px;}
 .scroll p{word-spacing: -5px;}
-.logo{width: 100px; height: 100px; opacity: 0.5;}
-.nav{display: flex; text-decoration: none; list-style: none; width: 600px; justify-content: space-around; margin-left: 150px;}
-.nav a{color: rgb(121, 121, 121);}
-.logo:hover{opacity: 1;}
-.nav > li > a:hover{color: white;}
-.head{display: flex; align-items: center; position: fixed; z-index: 100; width: 100%; height: 60px; background-color: black; font-weight: 300;}
+.logo{width: 60px; height: 40px;}
+.pro13{font-size: 1.2em; font-weight:500; color: black;}
+.pro13:hover{color: #9b9b9b; transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);}
+.head{display: flex; align-items: center; position: fixed; z-index: 100; width: 100%; height: 50px; background-color: rgba(255, 255, 255, 0.7); backdrop-filter: saturate(180%) blur(20px); font-weight: 300;}
+.headinner{display: flex; justify-content: space-between; align-items: center; width: 1200px; margin: 0 auto;}
+.nav{display: flex; align-items: center; font-size: 13px;}
+.nav a{color: gray;}
+.nav li:last-child a{color: white;}
+.nav a:hover{color: black; transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1)}
+.nav a::after{ content: "";
+    width: 1px;
+    height: 11px;
+    background: rgb(0, 0, 0);
+    display: inline-block;
+    margin: 0 20px;}
+    .nav li:last-child a::after{display: none;}
+.buy{display: block; width: 65px; height: 27px; line-height: 27px; background-color: #147ce5; text-align: center; border-radius: 980px;}
+
+
+
+
 .s2{position: relative; display: flex;}
 .s2left{width: 40%; height: 100vh;}
 .s2right{width: 60%; height: 100vh; background-color: black; position: relative;}
@@ -82,12 +115,12 @@ footer.on {height: 1400px; transition: height 2s;}
 .s2button a.on {color: black; transition:all 1s;}
 .s3{overflow: hidden; position: relative; background-color: rgb(0, 0, 27);}
 .s3inner{position: relative; width: 1400px; margin: 0 auto;}
-.s3box{position: absolute; top: 230px; left: 100px; z-index: 3; color: white;}
-.s3box2{position: absolute; top:480px; left: 300px; z-index: 3; color: white;}
-.s3box3{position: absolute; top: 700px; left: 100px; z-index: 3; color: white;}
+.s3box{position: absolute; top: 230px; left: 100px; z-index: 3; color: white; font-weight: 300;}
+.s3box2{position: absolute; top:480px; left: 300px; z-index: 3; color: white; font-weight: 300;}
+.s3box3{position: absolute; top: 700px; left: 100px; z-index: 3; color: white; font-weight: 300;}
 .s3box p{font-size: 18px;}
-.s3head{display: inline-block; width: 800px; border-bottom: solid rgb(255, 255, 255) 1px; font-size: 25px; margin: 10px 0;}
-.yellow{color: rgb(255, 211, 14);}
+.s3head{display: inline-block; width: 800px; border-bottom: solid rgb(255, 255, 255) 1px; font-size: 25px; font-weight: 600; margin: 10px 0;}
+.yellow{color: rgb(255, 211, 14); font-weight: 300;}
 .s3bg{position: absolute; right: -200px; padding-top: 100px; z-index: 2;}
 #control > .green{background-color: #556352;}
 #control > .silver{background-color: #EEEFE9;}
@@ -100,7 +133,7 @@ footer.on {height: 1400px; transition: height 2s;}
 .s4main video{width: 900px;}
 .s4left{width: 40%; height: 100vh; background-color: #000000; position: relative;}
 .s4lefttext{color: white; transform: rotate(90deg); font-size: 40px; position: absolute; right: -400px; bottom: 460px; z-index: 10; animation: s4left 4s infinite;}
-.s4lefttext2{width: 350px; height: 250px; color: rgb(255, 255, 255); font-size: 16px; text-align: right; position: absolute; right: 107px; bottom: 100px;}
+.s4lefttext2{width: 350px; height: 250px; color: rgb(255, 255, 255); font-size: 16px; font-weight: 300; text-align: right; position: absolute; right: 107px; bottom: 100px;}
 .s4leftbg{position: absolute; bottom: 178px; right: -150px; transform: rotate(90deg); z-index: 2;}
 .s4leftbg2{position: absolute; right: 0; bottom: 414px; width: 480px; height: 384px; border-radius: 30px 0 0 30px; opacity: 0.9; z-index: 1;}
 .con{position: relative; width: 100%; height: 100vh; overflow: hidden;}
@@ -110,12 +143,12 @@ footer.on {height: 1400px; transition: height 2s;}
 .s4right{width: 60%; height: 100vh; position: relative;}
 .rightinner{position: relative; width: 1100px; height: 100vh;}
 .righttext{font-size: 65px; position: absolute; left: 20px; bottom: 850px;}
-.righttext2{position: absolute; left: 50px; bottom: 150px; font-size: 16px; text-align: left; color: rgb(0, 0, 0); width: 400px; height: 200px;}
-.righttext3{position: absolute; right: 100px; bottom: 500px; text-align: right; font-size: 60px; color:rgb(255, 211, 14); letter-spacing: -6px;}
+.righttext2{position: absolute; left: 50px; bottom: 150px; font-size: 16px; font-weight: 400; text-align: left; color: rgb(0, 0, 0); width: 400px; height: 200px;}
+.righttext3{position: absolute; right: 100px; bottom: 500px; text-align: right; font-size: 55px; color:rgb(255, 211, 14); letter-spacing: -6px;}
 .s5{position: relative;}
 .s5inner{width: 1200px; margin: 0 auto; padding-top: 200px;}
 .s5bg{padding: 0 150px 0 0;}
-.mySwiper2{width: 600px; height: 300px;}
+.basic2{width: 600px; height: 300px;}
 .box1{width: 600px; position: relative;}
 .box1 div{font-size: 65px; width: 550px;}
 .box1 p{color: gray; font-size: 20px;}
@@ -123,50 +156,58 @@ footer.on {height: 1400px; transition: height 2s;}
 .box2p{position: absolute; right: 230px; bottom: 110px;}
 .box3p{position: absolute; right: 230px; bottom: 15px;}
 .s5left{width: 550px;}
-.s5left button{border: none; background-color: white; font-size: 25px; display: flex; align-items: center; margin: 0 auto; margin-top: 50px;}
-.s5left button:hover{animation: btn 1.5s infinite;}
+.s5left button{border: solid black 2px; border-radius: 980px; padding: 4px 10px; background-color: white; font-size: 15px; display: flex; align-items: center; margin: 0 auto; margin-top: 50px;}
+.s5left button:hover{animation: btn 1.5s infinite; background-color: #000; color: white;}
 .s5leftbox{font-size: 40px; text-align: center;}
 .plusbox{position: relative;}
 .s5plus{display: flex; position: absolute; left: -300px; bottom: -40px; width: 750px; height: 850px; background-color: #f5f5f7; z-index: 100;}
 .flex{display: flex; margin-left: 150px;}
 .s5plusleft{width: 50%;}
-.s5plusleft p{color: rgb(88, 88, 88); font-size: 15px; padding:50px;}
+.s5plusleft p{color: rgb(48, 48, 48); font-size: 16px; font-weight: 300; padding:50px;}
 .s5plusright{width: 50%; padding: 50px 0 0 0;}
-.s5plusright p{width: 300px; color: rgb(88, 88, 88); font-size: 15px; margin-top: 42px;}
+.s5plusright p{width: 300px; color: rgb(48, 48, 48); font-size: 16px; font-weight: 300; margin-top: 42px;}
 .s5rightbox{width: 280px; font-size: 16px; border-top: solid black 1px; padding: 15px 10px; border-bottom: solid black 1px;}
 .close{position: absolute; bottom: 50px; left: 50%; font-size: 40px; z-index: 1;}
-.memo{position: relative;}
-.memoinner{width: 1200px; margin: 0 auto;}
-.memotext1{font-size: 30px;}
-.memotext2{font-size: 550px;}
-.memotext3{font-size: 40px; letter-spacing: -4px;}
+.memo{position: relative; overflow: hidden;}
+.memotext{position: absolute; width: 100%; height: 100%; font-size: 30vw; display: flex; justify-content: center; align-items: center; letter-spacing: -50px; background: black; color: white; mix-blend-mode: multiply;}
+.memotext2{position: absolute; width: 100%; font-size: 2.7vw; font-weight: 100; color: rgb(255, 255, 255); display: flex; justify-content: center; top: 13%;}
+.memo video{position: absolute; width: 100%; height: 100%; object-fit: contain;}
+.memobg{position: absolute; width: 15vw; height: 15vw; bottom: 0; left: 0; z-index: 10;}
+.memobg2{position: absolute; width: 15vw; height: 15vw; bottom: 0; right: 0; z-index: 10;}
+.memobg::before, .memobg::after{position: absolute; content: ""; top: -5%; left: -5%; width: 250%; height: 250%; border-radius: 50%; opacity: 0.5; filter: blur(300px);}
+.memobg::after{background-color: #00ffff; z-index: -1; animation: memobg1 4s ease infinite;}
+.memobg::before{background-color: #ff0072; z-index: -2; animation: memobg2 4s ease infinite;}
+.memobg2::before, .memobg2::after{position: absolute; content: ""; top: -5%; left: -5%; width: 250%; height: 250%; border-radius: 50%; opacity: 0.5; filter: blur(300px);}
+.memobg2::after{background-color: #00ffff; z-index: -1; animation: memobg1 4s ease infinite;}
+.memobg2::before{background-color: #ff0072; z-index: -2; animation: memobg2 4s ease infinite;}
 
-.s6{position: relative;}
+.number{display: flex; color: rgb(163, 163, 163); font-size: 2vw; font-weight: 100; letter-spacing: 25px; justify-content: center; position: absolute; width: 100%; bottom: 15%; z-index: 200;}
+.s6{position: relative; overflow: hidden;}
 .s6textbox{position: absolute; bottom: 550px; right: 950px;}
-.plusbox2{position: absolute; bottom: 500px; right: 1200px;}
-.plusbox2 button{border: none; background: none; font-size: 25px; display: flex; align-items: center;}
-.plusbox2 button:hover{animation: btn 1.5s infinite;}
+.plusbox2{position: absolute; bottom: 470px; right: 1520px;}
+.plusbox2 button{border: solid black 2px; border-radius: 980px; padding: 4px 10px; background: none; font-size: 15px; font-weight: 700; display: flex; align-items: center;}
+.plusbox2 button:hover{animation: btn 1.5s infinite; background-color: #000; color: white;}
 .s6text1{font-size: 90px; line-height: 110px;}
 .s6text2{font-size: 40px; line-height: 50px; margin-top: 30px;}
 .s6plus{position: absolute; bottom: 0; width: 100%; height: 100vh; background-color: #FBFAFF; z-index: 1000;}
-.close2{position: absolute; right: 100px; top: 50px; font-size: 60px;}
+.close2{position: absolute; right: 100px; top: 80px; font-size: 60px;}
 .s6bg{position: absolute; right: 0; bottom: 0;}
 .s6bgplus{position: absolute; bottom: -150px; right: 20%; overflow: hidden;}
 .s6plusinner{display: flex; justify-content: space-around; width: 1200px; margin: 0 auto; margin-top: 80px;}
-.s6plustext1{width: 340px; font-size: 23px; text-align:left;}
-.s6plustext2{width: 400px; font-size: 20px; text-align: left; color: gray;}
+.s6plustext1{width: 340px; font-size: 23px; font-weight: 500; text-align:left;}
+.s6plustext2{width: 400px; font-size: 20px; font-weight: 400; text-align: left; color: gray;}
 
 .s7{position: relative;}
 .s7inner{width: 1100px; margin: 0 auto; padding-top: 80px;}
 .s7toptextbox{display: flex; justify-content: space-between; color: white;}
 .s7top{width: 100%; height: 50vh; background-color: black;}
 .s7toptext1{width: 400px; font-size: 55px;}
-.s7toptext2{width: 400px; font-size: 18px; color: gray;}
-.s7button{color: #2997ff; display: flex; font-size: 19px; align-items: center;}
+.s7toptext2{width: 400px; font-size: 18px; font-weight: 400; color: gray;}
+.s7button{color: #2997ff; display: flex; font-size: 19px; align-items: center; font-weight: 500;}
 .s7button:hover{animation: btn 1.5s infinite;}
 .s7bottom{width: 100%; height: 50vh;}
 .s7bottomtextbox{display: flex; justify-content: space-between;}
-.s7line{position: absolute; left: 0; bottom: 49.7%; width: 100%; height: 4px; background-color: rgb(185, 185, 185); box-shadow: 0 0 7px rgb(216, 216, 216), 0 0 10px rgb(105, 105, 105), 0 0 17px rgb(163, 163, 163); z-index: 1000; animation: s7line 4s infinite;}
+.s7line{position: absolute; left: 0; bottom: 49.7%; width: 100%; height: 2px; background-color: rgb(0, 0, 0); box-shadow:0 0 10px #ffffff; z-index: 1000; filter: blur(2px); animation: s7line 4s infinite;}
 
 
 .footer{width: 100%; height: 1400px; background:#f5f5f7; font-weight: 300;}
@@ -188,7 +229,7 @@ h3{font-size: 20px;}
 .footbutton2 a{color: #06c;}
 .footbutton2 span{font-size: 15px; margin: 8px 0 0 5px; color: #06c;}
 .foot4{font-size: 13px; color: gray; padding: 10px 0;}
-
-
-
-
+.swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets {left: 20px;}
+.swiper-pagination-bullet{border-radius: 0; width: 20px; height: 5px;}
+.swiper-pagination-bullet-active{width: 30px;}
+.swiper.white{--swiper-theme-color:white;}
