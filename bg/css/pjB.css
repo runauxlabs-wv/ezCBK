@@ -3,17 +3,17 @@
 		/* Material Icons Outlined*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
 
-* {margin: 0; padding: 0; text-decoration: none;}
-
+* {margin: 0; padding: 0; text-decoration: none;
+    /* outline: solid red 1px; */
+}
 @keyframes phone {
     100% {transform: translate(0,80px); opacity: 0.8;}
     50% {transform: translate(0,70px); opacity: 1;}
     0% {transform: translate(0,80px); opacity: 0.8;}
-        }
+}
 @keyframes roll {
-    100% {transform: translate(0,50px);}
-    50% {transform: translate(0,30px); opacity: 0.5;}
-    0% {transform: translate(0,50px);}
+    100% {transform: translate(0,25px); opacity: 0;}
+    0% {transform: translate(0,0px); opacity: 1;}
 }
 @keyframes btn {
     100% {transform: translate(0,0px);}
@@ -27,11 +27,11 @@
 @keyframes s4 {
     0% {transform: translateY(100vh) scale(0.5);}
     50% {transform: translateY(50vh) scale(0);}
-    100% {transform: translateY(-5vh) scale(1);}    
+    100% {transform: translateY(-10vh) scale(1);}    
 }
 @keyframes s4left {
     0% {opacity: 1;}
-    50% {opacity: 0.5;}
+    50% {opacity: 0.5; color: white;}
     100% {opacity: 1;}
 }
 @keyframes memobg1 {
@@ -69,19 +69,23 @@ footer{width: 100%; height: 0; overflow: hidden; transition: height 2s;}
 footer.on {height: 1400px; transition: height 2s;}
 .swiper.basic{width: 100%; height: 100vh;}
 .s1{background-color: rgb(233, 233, 233); position: relative; overflow: hidden;}
-.s1img{position: absolute; right: 0; bottom: 250px; animation: phone 5s infinite; animation-direction: reverse; z-index: 5;}
-.s1text{font-size: 100px; text-align: center; margin-top: 250px; position: relative;}
-.line{width: 100%; height: 50px; border-top: solid #383838 4px; position: absolute; bottom: 0; z-index: -1;}
+.s1img{width: 110vh; position: absolute; right: 0; bottom: 250px; animation: phone 5s infinite; animation-direction: reverse; z-index: 5;}
+.s1text{font-size: 7vh; text-align: center; margin-top: 200px; position: relative;}
+.line{width: 100%; height: 4vh; border-top: solid #797979 2px; position: absolute; bottom: 0; z-index: -1;}
 .s1textbox{display: inline-block; padding: 0 10px; background-color: rgb(233, 233, 233); color: #383838;}
-.scroll{font-size: 15px; animation: roll 2s infinite; position: absolute; bottom: 50px; left: 50%; z-index: 10;}
-.scroll span{font-size: 45px; padding-left: 18px;}
-.scroll p{word-spacing: -5px;}
-.logo{width: 60px; height: 40px;}
+.s1textboxm{display: none;}
+
+.logo{display: none; width: 60px; height: 40px;}
+.head button{display: none;}
+.mheadtitle{display: none;}
 .pro13{font-size: 1.2em; font-weight:500; color: black;}
 .pro13:hover{color: #9b9b9b; transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);}
-.head{display: flex; align-items: center; position: fixed; z-index: 100; width: 100%; height: 50px; background-color: rgba(255, 255, 255, 0.7); backdrop-filter: saturate(180%) blur(20px); font-weight: 300;}
+.head{display: flex; align-items: center; position: fixed; z-index: 100; width: 100%; height: 50px; background-color: rgba(255, 255, 255, 0.7); backdrop-filter: saturate(180%) blur(20px); z-index: 10;  font-weight: 300;}
 .headinner{display: flex; justify-content: space-between; align-items: center; width: 1200px; margin: 0 auto;}
 .nav{display: flex; align-items: center; font-size: 13px;}
+.scroll{position: absolute; bottom: 5%; left: 50%; width: 30px; height: 47px; border: solid rgb(77, 77, 77) 2px; border-radius: 50px;}
+.scroll p{font-weight: 300; font-size: 14px; margin: 38px 0 0 0;}
+.scrollball{display: block; width: 7px; height: 10px; background-color: rgb(90, 90, 90); border-radius: 40%; margin: 0 auto; margin-top: 5px; animation: roll 1.5s infinite;}
 .nav a{color: gray;}
 .nav li:last-child a{color: white;}
 .nav a:hover{color: black; transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1)}
@@ -95,58 +99,82 @@ footer.on {height: 1400px; transition: height 2s;}
 .buy{display: block; width: 65px; height: 27px; line-height: 27px; background-color: #147ce5; text-align: center; border-radius: 980px;}
 
 
+.testsec{display: none; overflow: hidden;}
 
 
-.s2{position: relative; display: flex;}
+
+.s2{position: relative; display: flex; overflow: hidden;}
 .s2left{width: 40%; height: 100vh;}
-.s2right{width: 60%; height: 100vh; background-color: black; position: relative;}
-.s2textbox{position: absolute; top: 100px; left: 100px; display: block; width: 750px; height: 700px; font-size: 55px; text-align: left; color: gray;}
+.s2right{width: 60%; height: 100vh; background-color: black; position: relative; display: flex; justify-content: center; align-items: center; overflow: hidden;}
+.s2textbox{display:block; margin: 50px; font-size: 5vh; text-align: left; color: gray;}
 .s2textbox span{color: white;}
-.s2bg{position: relative; width: 500px; height: 500px; margin: 0 auto; padding-top: 30%;}
-.s2bg span{position: absolute; width: 450px; height: 450px; background: var(--clr); border-radius: 50%; transform-origin: 100px; animation: s2 5s linear infinite; animation-duration: calc(var(--d)); mix-blend-mode:lighten; filter: blur(30px); opacity: 0.3;}
+.s2bg{position: absolute;}
+.s2bg span{position: absolute; width: 85vh; height: 85vh; background: var(--clr); border-radius: 50%; transform-origin: 100px; animation: s2 5s linear infinite; animation-duration: calc(var(--d)); mix-blend-mode:lighten; filter: blur(30px); opacity: 0.3;}
 .s2bg span:nth-child(even) {animation-direction: reverse;}
 #visual {width: 500px; margin: 0 auto; position: relative; padding-top: 230px;}
-#pic {height: 543px; overflow: hidden; position: relative;}
+#pic {height: 543px; position: relative;}
 #pic > div {position: absolute; left: 0; top: 0; display: none;}
 #control {position: absolute; width: 100%; left: 50px; bottom: -70px;}
 #control a {display: inline-block; width: 26px; height: 26px; background: #000; text-indent: -9999px; line-height: 26px; font-size: 0.8em; border-radius: 14px; margin: 0 2px;}
 #control a.on {border: solid rgb(170, 170, 170) 4px;}
 .s2button{position: absolute; right: 50px; top: 500px; width: 100px; font-size: 25px; color: rgb(167, 167, 167);}
 .s2button a.on {color: black; transition:all 1s;}
+.s2mobile{display: none; overflow: hidden;}
+.s2m{position: absolute; right: -1300px; top: 30%; z-index: 100;}
+
+
+
+
+
+
 .s3{overflow: hidden; position: relative; background-color: rgb(0, 0, 27);}
-.s3inner{position: relative; width: 1400px; margin: 0 auto;}
+.s3inner{position: relative; width: 1400px; height: 100vh; margin: 0 auto;}
 .s3box{position: absolute; top: 230px; left: 100px; z-index: 3; color: white; font-weight: 300;}
 .s3box2{position: absolute; top:480px; left: 300px; z-index: 3; color: white; font-weight: 300;}
 .s3box3{position: absolute; top: 700px; left: 100px; z-index: 3; color: white; font-weight: 300;}
 .s3box p{font-size: 18px;}
 .s3head{display: inline-block; width: 800px; border-bottom: solid rgb(255, 255, 255) 1px; font-size: 25px; font-weight: 600; margin: 10px 0;}
 .yellow{color: rgb(255, 211, 14); font-weight: 300;}
-.s3bg{position: absolute; right: -200px; padding-top: 100px; z-index: 2;}
+.s3bg{position: absolute; bottom: -10%; right: -15%; z-index: 2;}
+.s3mbg{display: none;}
+.s3mbg2{display: none;}
 #control > .green{background-color: #556352;}
 #control > .silver{background-color: #EEEFE9;}
 #control > .gold{background-color: #E6D1B4;}
 #control > .graphite{background-color: #504F4B;}
 #control > .sierrablue{background-color: #97B1C8;}
-.s4{position: relative; width: 100%; height: 100vh; display: flex;}
-.s4main{width: 878px; height: 432px; overflow: hidden; position:absolute; bottom: 390px; left: -420px; z-index: -1;}
-.s4bg{position: absolute; left: 220px; bottom: -225px; transform: rotate(90deg); z-index: 2; overflow: hidden;}
-.s4main video{width: 900px;}
-.s4left{width: 40%; height: 100vh; background-color: #000000; position: relative;}
-.s4lefttext{color: white; transform: rotate(90deg); font-size: 40px; position: absolute; right: -400px; bottom: 460px; z-index: 10; animation: s4left 4s infinite;}
-.s4lefttext2{width: 350px; height: 250px; color: rgb(255, 255, 255); font-size: 16px; font-weight: 300; text-align: right; position: absolute; right: 107px; bottom: 100px;}
-.s4leftbg{position: absolute; bottom: 178px; right: -150px; transform: rotate(90deg); z-index: 2;}
-.s4leftbg2{position: absolute; right: 0; bottom: 414px; width: 480px; height: 384px; border-radius: 30px 0 0 30px; opacity: 0.9; z-index: 1;}
-.con{position: relative; width: 100%; height: 100vh; overflow: hidden;}
+.s4{position: relative; width: 100%; height: 100vh; overflow: hidden;}
+.s4 button{position: absolute; font-size: 1.3vh; color: rgb(156, 156, 156); border: none; background: none; z-index: 2; bottom: 6%;}
+.s4promax{position: relative; display: flex; height: 100vh; justify-content: center; align-items: center; z-index: 1;}
+.s4promax img{width: 40vh;}
+.pro{position: absolute; left: 63%; font-size: 2vh; font-weight: 400;}
+.pro span{font-weight: 600; font-size: 3vh;}
+.promax{position: absolute; left: 27%; font-size: 2vh; font-weight: 400;}
+.promax span{font-weight: 600; font-size: 3vh;}
+.s4XDR{position: absolute; bottom: 10%; font-size: 2.2vh; font-weight: 400;}
+/* .xdr{position: absolute; width: 30vh; bottom: 42%; right: 21%;} */
+.s4plus{position: absolute; bottom: 0; width: 100%; height: 100vh; background: black; z-index: 2;}
+.con{position: absolute; width: 100%; height: 100vh; overflow: hidden; z-index: -1;}
 .bubble{position: relative; display: flex; justify-content: space-between;}
 .bubble span{position: relative; width: 40px; height: 20px; background: #4fc3dc; margin: 0 4px; border-radius: 50%; box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc; animation: s4 15s linear infinite; animation-duration: calc(200s / var(--del)); filter: blur(20px);}
 .bubble span:nth-child(even){background: #ff2d75; box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;}
-.s4right{width: 60%; height: 100vh; position: relative;}
-.rightinner{position: relative; width: 1100px; height: 100vh;}
-.righttext{font-size: 65px; position: absolute; left: 20px; bottom: 850px;}
-.righttext2{position: absolute; left: 50px; bottom: 150px; font-size: 16px; font-weight: 400; text-align: left; color: rgb(0, 0, 0); width: 400px; height: 200px;}
-.righttext3{position: absolute; right: 100px; bottom: 500px; text-align: right; font-size: 55px; color:rgb(255, 211, 14); letter-spacing: -6px;}
-.s5{position: relative;}
+
+.s4plusinner{display: flex; position: relative; height: 100vh; justify-content: center; align-items: center;}
+.s4plusinner img{width: 40vh;}
+.s4plustext{position: absolute; left: 15%; top: 25%; line-height: 40px; font-size: 4vh; color: rgb(179, 179, 179); z-index: 10;}
+.s4plustext span{color: white;}
+.s4plustext2{position: absolute; font-size: 1.5vh; font-weight: 500; text-align: justify; left: 63%; top: 60%; color: rgb(179, 179, 179); z-index: 10;}
+.s4plustext2 span{color: white;}
+.close3{position: absolute; color: white; left: 50%; bottom: 10%;}
+.close3 span{font-size: 2vw;}
+.s4bg{position: absolute; left: 220px; bottom: -225px; transform: rotate(90deg); z-index: 2; overflow: hidden;}
+.s5{position: relative; overflow: hidden;}
 .s5inner{width: 1200px; margin: 0 auto; padding-top: 200px;}
+.s5m{display: none;}
+.s5mobile{display: none;}
+.s5mtitle{display: none;}
+.s5mtitle2{display: none;}
+
 .s5bg{padding: 0 150px 0 0;}
 .basic2{width: 600px; height: 300px;}
 .box1{width: 600px; position: relative;}
@@ -169,8 +197,8 @@ footer.on {height: 1400px; transition: height 2s;}
 .s5rightbox{width: 280px; font-size: 16px; border-top: solid black 1px; padding: 15px 10px; border-bottom: solid black 1px;}
 .close{position: absolute; bottom: 50px; left: 50%; font-size: 40px; z-index: 1;}
 .memo{position: relative; overflow: hidden;}
-.memotext{position: absolute; width: 100%; height: 100%; font-size: 30vw; display: flex; justify-content: center; align-items: center; letter-spacing: -50px; background: black; color: white; mix-blend-mode: multiply;}
-.memotext2{position: absolute; width: 100%; font-size: 2.7vw; font-weight: 100; color: rgb(255, 255, 255); display: flex; justify-content: center; top: 13%;}
+.memotext{width: 100%; height: 100%; font-size: 30vw; display: flex; justify-content: center; align-items: center; letter-spacing: -3vw; background: black; color: white; mix-blend-mode: multiply;}
+.memotext2{position: absolute; width: 100%; font-size: 2.7vw; font-weight: 300; color: rgb(255, 255, 255); display: flex; justify-content: center; top: 13%;}
 .memo video{position: absolute; width: 100%; height: 100%; object-fit: contain;}
 .memobg{position: absolute; width: 15vw; height: 15vw; bottom: 0; left: 0; z-index: 10;}
 .memobg2{position: absolute; width: 15vw; height: 15vw; bottom: 0; right: 0; z-index: 10;}
@@ -181,25 +209,26 @@ footer.on {height: 1400px; transition: height 2s;}
 .memobg2::after{background-color: #00ffff; z-index: -1; animation: memobg1 4s ease infinite;}
 .memobg2::before{background-color: #ff0072; z-index: -2; animation: memobg2 4s ease infinite;}
 
-.number{display: flex; color: rgb(163, 163, 163); font-size: 2vw; font-weight: 100; letter-spacing: 25px; justify-content: center; position: absolute; width: 100%; bottom: 15%; z-index: 200;}
+.number{display: flex; color: rgb(255, 255, 255); font-size: 2vw; font-weight: 300; letter-spacing: 25px; justify-content: center; position: absolute; width: 100%; bottom: 15%; z-index: 200;}
 .s6{position: relative; overflow: hidden;}
-.s6textbox{position: absolute; bottom: 550px; right: 950px;}
-.plusbox2{position: absolute; bottom: 470px; right: 1520px;}
-.plusbox2 button{border: solid black 2px; border-radius: 980px; padding: 4px 10px; background: none; font-size: 15px; font-weight: 700; display: flex; align-items: center;}
-.plusbox2 button:hover{animation: btn 1.5s infinite; background-color: #000; color: white;}
-.s6text1{font-size: 90px; line-height: 110px;}
-.s6text2{font-size: 40px; line-height: 50px; margin-top: 30px;}
+.s6textbox{position: absolute; top: 15%; left: 10%;}
+.plusbox2{position: absolute; left: 10%; bottom: 40%;}
+.s6 button{border: solid black 2px; border-radius: 980px; background: none; font-size: 15px; font-weight: 700; display: flex; justify-content: center; align-items: center; width: 120px; height: 35px;}
+.s6 button:hover{animation: btn 1.5s infinite; background-color: #000; color: white;}
+.s6text1{font-size: 5vw; line-height: 5.4vw;}
+.s6text2{font-size: 2vw; margin-top: 30px;}
 .s6plus{position: absolute; bottom: 0; width: 100%; height: 100vh; background-color: #FBFAFF; z-index: 1000;}
 .close2{position: absolute; right: 100px; top: 80px; font-size: 60px;}
-.s6bg{position: absolute; right: 0; bottom: 0;}
+.s6bg{position: absolute; right: -2px; bottom: 0;}
 .s6bgplus{position: absolute; bottom: -150px; right: 20%; overflow: hidden;}
 .s6plusinner{display: flex; justify-content: space-around; width: 1200px; margin: 0 auto; margin-top: 80px;}
 .s6plustext1{width: 340px; font-size: 23px; font-weight: 500; text-align:left;}
 .s6plustext2{width: 400px; font-size: 20px; font-weight: 400; text-align: left; color: gray;}
 
-.s7{position: relative;}
-.s7inner{width: 1100px; margin: 0 auto; padding-top: 80px;}
+.s7{position: relative; overflow: hidden;}
+.s7inner{width: 1100px; margin: 0 auto; padding-top: 120px;}
 .s7toptextbox{display: flex; justify-content: space-between; color: white;}
+.s7inner img{margin-bottom: 20px;}
 .s7top{width: 100%; height: 50vh; background-color: black;}
 .s7toptext1{width: 400px; font-size: 55px;}
 .s7toptext2{width: 400px; font-size: 18px; font-weight: 400; color: gray;}
@@ -229,7 +258,7 @@ h3{font-size: 20px;}
 .footbutton2 a{color: #06c;}
 .footbutton2 span{font-size: 15px; margin: 8px 0 0 5px; color: #06c;}
 .foot4{font-size: 13px; color: gray; padding: 10px 0;}
-.swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets {left: 20px;}
+.swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets {left: 20px; width: auto; right: auto}
 .swiper-pagination-bullet{border-radius: 0; width: 20px; height: 5px;}
 .swiper-pagination-bullet-active{width: 30px;}
 .swiper.white{--swiper-theme-color:white;}

@@ -3,11 +3,15 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0">
     <title>iphone13</title>
     <script src="../js/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../css/pjB.css">
+    <link rel="stylesheet" type="text/css" media="all and (max-width: 750px)" href="../css/pjBm.css">
+    
+
 
 </head>
 <!-- https://swiperjs.com/demos -->
@@ -18,11 +22,24 @@
 <!-- 26번 33번-->
 <body>
     <div class="head">
+          <div class="mheadtitle"><a href="#" onClick="top.location='javascript:location.reload()'">iphone 13pro</a></div>
+          <img src="../img/pjB/logowhite.png" onClick="top.location='javascript:location.reload()'" class="logo" alt="logo" title="logo">
+          <button>
+            <span class="material-symbols-outlined">
+              apps
+              </span>
+          </button>
+          <div class="mnav">
+              <div class="mmenu">
+                <a href="#">개요</a>
+                <a href="#">iphone으로 갈아타기</a>
+                <a href="#">구입하기</a>
+              </div>
+          </div>
       <div class="headinner">
-        <a href="#" class="pro13">iPhone 13 Pro</a>
-    <!-- <img src="../img/pjB/logo.png" class="logo" alt="logo" title="logo"> -->
+        <a href="#" onClick="top.location='javascript:location.reload()'" class="pro13">iPhone 13 Pro</a>
         <ul class="nav">
-          <li><a href="#">ihone으로 갈아타기</a></li>
+          <li><a href="#">iphone으로 갈아타기</a></li>
           <li><a href="#">제품 사양</a></li>
           <li><a href="#" class="buy">구입하기</a></li>
         </ul>
@@ -32,29 +49,38 @@
     <div class="swiper basic">
         <div class="swiper-wrapper">
           <div class="swiper-slide s1">
-                <div>
-                <img src="../img/pjB/s1img.png" class="s1img" alt="phone" title="phone">
-                </div>
+                <!-- <img src="../img/pjB/s1img.png" class="s1img" alt="phone" title="phone"> -->
             <div class="s1text" data-aos="fade-up" data-aos-duration="2000">
                 <div class="line"></div>
                 <p class="s1textbox">iphone13 pro</p>
+                <p class="s1textboxm">iphone13 pro<br><span>이게 바로 프로.</span></p>
+
             </div>
               <div class="scroll">
-                <span class="material-symbols-outlined">
-                  mouse
-                  </span>
-                  <p>Scroll Down</p>
-                  <span class="material-symbols-outlined">
-                    expand_more
-                    </span>
+                <div class="scrollball"></div>
+                <p>scroll</p>
               </div>
+              <img src="../img/pjB/s1img.png" class="s1img" alt="phone" title="phone">
+
               </div>
           <div class="swiper-slide s2">
+            <div class="s2mobile">
+              <div class="s2mtitle">Stainless steel design</div>
+
+              <img src="../img/pjB/s2mobile.png" alt="mobile">
+              <p>시에라블루, 그래파이트, 골드, 실버, 알파인 그린</p>
+
+            </div>
             <div class="s2left">
             <div id="visual">
             <div id="pic">
-              <div><a href="#"><img src="../img/pjB/alpineGreen.jpg" alt="1"></a></div>
-              <div><a href="#"><img src="../img/pjB/silver.jpg" alt="2"></a></div>
+              <div><a href="#"><img src="../img/pjB/alpineGreen.jpg" alt="1"></a>
+                <img src="../img/pjB/s4back.png" class="s2m" alt="1">
+              </div>
+              <div><a href="#"><img src="../img/pjB/silver.jpg" alt="2"></a>
+                <img src="../img/pjB/s4left2.jpg" class="s2m" alt="1">
+
+              </div>
               <div><a href="#"><img src="../img/pjB/gold.jpg" alt="3"></a></div>
               <div><a href="#"><img src="../img/pjB/graphite.jpg" alt="4"></a></div>
               <div><a href="#"><img src="../img/pjB/sierrablue.jpg" alt="5"></a></div>
@@ -76,7 +102,7 @@
           </div>
           </div>
           <div class="s2right">
-            <div class="s2textbox">사상 최대 규모의 업그레이드를 거친 Apple의 <span>프로급 카메라 시스템</span>. 훨씬 더 많은 디테일을 포착하는 <span>차원이 다른 하드웨어</span>, 새로운 사진 및 영화 촬영 기법을 구현하는 <span>놀랄 만큼 똑똑한 소프트웨어</span>, 그리고 이 모든 걸 가능케 하는 <span>압도적으로 빠른 칩</span>까지. <span>당신이 촬영하는 방식까지 바꿔놓을 카메라, 지금 만나보세요.</span>
+            <div class="s2textbox">사상 최대 규모의 업그레이드를 거친 Apple의 <span>프로급 카메라 시스템</span>. 훨씬 더 많은 디테일을 포착하는 <span>차원이 다른 하드웨어</span>, 새로운 사진 및 영화 촬영 기법을 구현하는 <span>놀랄 만큼 똑똑한 소프트웨어</span>, 그리고 이 모든 걸 가능케 하는 <span>압도적으로 빠른 칩</span>까지. 당신이 촬영하는 방식 까지 바꿔놓을 카메라, <span>지금 만나보세요.</span>
             </div>
             <div class="s2bg">
               <span style="--clr:#fbad04;--i:18px;--d:2.5s;"></span>
@@ -86,10 +112,63 @@
             </div>
           </div>
           </div>
+          <div class="swiper-slide s4">
+            <div class="s4promax">
+              <p class="promax">iPhone 13 Pro Max<br>
+                <span>16.9cm</span></p>
+                <p class="pro">iPhone 13 Pro<br>
+                  <span>15.4cm</span></p>
+            <img src="../img/pjB/promax.png" alt="max" title="max">
+            <p class="s4XDR">ProMotion 기술이 적용된 Super Retina XDR 디스플레이</p>
+            <button>자세히보기
+            </button>  
+
+          </div>
+            <div class="s4plus">
+              <div class="s4plusinner">
+                <div class="con">
+                  <div class="bubble">
+                  <span style="--del:11"></span>
+                  <span style="--del:12"></span>
+                  <span style="--del:24"></span>
+                  <span style="--del:15"></span>
+                  <span style="--del:11"></span>
+                  <span style="--del:10"></span>
+                  <span style="--del:25"></span>
+                  <span style="--del:27"></span>
+                  <span style="--del:29"></span>
+                  <span style="--del:20"></span>
+                  <span style="--del:13"></span>
+                </div>
+                </div>
+                <img src="../img/pjB/ttest.png" alt="max" title="max">
+                  </div>
+                  <p class="s4plustext">Super Retina 및<br>
+                    <span>Super Retina XDR</span>
+                </p>
+                <p class="s4plustext2">
+                  <span>Super Retina XDR</span>은 또한 사진과 비디오의 밝은 영역과 <br>어두운 영역을 광범위하게 표현하는<Br> HDR(고명암 대비) 기술을 사용하는 것이 특징입니다.<br>이를 통해 짙은 순흑색과 밝은 순백색을 표현하는 것은 물론 그 사이에 있는 색상의<br>미묘한 차이까지 담아낼 수 있습니다.<br>사진의 색감이 한층 생생하고 Dolby Vision이나 HDR10,<br>HLG에서 보는 모든 것이 이전보다 훨씬 더 실감 나게 표현됩니다.
+                </p>
+                <!-- <img src="../img/pjB/xdr.jpg" class="xdr" alt="xdr" title="xdr"> -->
+
+                <div class="close3"><span class="material-symbols-outlined">
+                  close
+                  </span></div>
+            </div>
+          </div>
           <div class="swiper-slide s3">
+            <div class="s2bg s3mbg2">
+              <span style="--clr:#fbad04;--i:18px;--d:2.5s;"></span>
+              <span style="--clr:#03a1d9;--i:13px;--d:5s;"></span>
+              <span style="--clr:#f7036d;--i:15px;--d:7.5s;"></span>
+              <span style="--clr:#93ff16;--i:20px;--d:10s;"></span>
+            </div>
+            <img src="../img/pjB/s3bg.png" class="s3mbg" alt="s3" title="s3">
+            
+
             <div class="s3inner">
             <img src="../img/pjB/s3bg.png" class="s3bg" alt="s3" title="s3">
-            <div class="s3box title">
+            <div class="s3box">
             <div class="s3head">망원</div>
             <p class="yellow">77mm 초점 거리</p>
             <p class="yellow">3배 광학 줌</p>
@@ -98,7 +177,7 @@
             <p>6매(Six element) 렌즈</p>
             <p>OIS</p>
             </div>
-            <div class="s3box2 title2">
+            <div class="s3box2">
               <div class="s3head">울트라 와이드</div>
               <p>13mm 초점 거리</p>
               <p class="yellow">ƒ/1.8 조리개</p>
@@ -115,42 +194,7 @@
                 <p class="yellow">7매(Seven element) 렌즈</p>
                 <p>센서 시프트 OIS</p>  
               </div>
-            </div>
-          </div>
-          <div class="swiper-slide s4">
-            <div class="s4left">
-              <img src="../img/pjB/s4left.png" class="s4leftbg" alt="s4" title="s4">
-              <img src="../img/pjB/s4left2.jpg" class="s4leftbg2" alt="s4" title="s4">
-              <p class="s4lefttext">Smart HDR 4 optimizes each part of the scene</p>
-              <p class="s4lefttext2">Neural Engine의 머신 러닝 성능을 활용하는 스마트 HDR 4는 이제 한 장면 속에 등장하는 각 인물에 저마다 적절한 효과를 더해줍니다. 게다가 Apple의 소프트웨어와 ISP가 각 인물의 명암비, 조명, 피부 톤을 자동으로 보정해주기 때문에 사진 속 누구나 할 것 없이 모두 멋지죠.</p>
-              <div class="con">
-              <div class="bubble">
-              <span style="--del:11"></span>
-              <span style="--del:12"></span>
-              <span style="--del:24"></span>
-              <span style="--del:15"></span>
-              <span style="--del:11"></span>
-              <span style="--del:10"></span>
-              <span style="--del:25"></span>
-              <span style="--del:27"></span>
-              <span style="--del:29"></span>
-              <span style="--del:20"></span>
-              <span style="--del:13"></span>
-            </div>
-            </div>
-            </div>
-            <div class="s4right">
-              <div class="rightinner">
-              <p class="righttext">Super Retina XDR</p>
-              <p class="righttext2">iPhone 13의 OLED 디스플레이는 무려 28%, 즉 최대 800 니트까지 더 밝은 빛을 낼 수 있습니다. 덕분에 쨍한 햇빛 아래에서도 더 잘 보이죠. 그리고 HDR 콘텐츠 재생 시에는 여전히 밝기 최대 1200 니트까지 올라갑니다. 결과 밝은 화이트, 진정한 블랙 그리고 그 사이의 모든 음영까지 또렷하게 볼 수 있습니다. 훨씬 좋아진 전력 효율로 배터리까지 절약해준답니다.</p>
-              <p class="righttext3">더 선명하고, 디테일이 <br>살아있는 사진 및<br> 동영상</p>
-              <div class="s4main">
-                <img src="../img/pjB/s4bg.png" class="s4bg" alt="s4" title="s4">
-                <video muted autoplay loop>
-                  <source src="../video/4k.mp4" type="video/mp4">
-              </video>
-              </div>
-              </div>
+
             </div>
           </div>
           <div class="swiper-slide s5">
@@ -160,11 +204,58 @@
               <video muted autoplay>
                 <source src="../video/s5.mp4" type="video/mp4">
             </video>
-            <!-- <img src="../img/pjB/s5bg.jpg" class="s5bg" alt="s5" title="s5"> -->
+            <div class="s5mtitle">Introducing 13PRO display</div>
+
+            <img src="../img/pjB/s5mobile.jpg" class="s5mobile" alt="mobile" title="mobile">
+            <div class="swiper basic2 s5m">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="box1">
+                  <p>최대</p>
+                  <div>25% 향상된 야외 밝기</div>
+                  <p>햇빛 아래에서도 더욱 선명하게 보이는 콘텐츠</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="box1">
+                  <div>맞춤형 OLED 기술</div>
+                  <p>한계까지 밀어붙인 놀라운 해상도와 색상</p>
+                </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="box1">
+                    <p>최대</p>
+                    <div>1200 니트</div>
+                    <p>HDR 사진 및 동영상을 위한 최대 밝기</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="box1">
+                    <div>더 커진 디스플레이 면적</div>
+                    <p>비결은 부피를 줄인 TrueDepth 카메라 시스템</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="box1">
+                    <div>놀라운 색 충실도</div>
+                    <p>모든 콘텐츠를 생생하게 표현</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="box1">
+                    <div>탁월한 명암비와 해상도</div>
+                    <p>진정한 블랙, 밝은 화이트 선명한 디테일<br>또렷한 텍스트 완성</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="s5mtitle2">iPhone 13 Pro 디스플레이는 모서리가 둥근 형태로, 기기의 아름다운 곡면 디자인을 반영합니다. 이 모서리는 기기의 전체적인 모양인 직사각형 내부에 위치합니다. 직사각형 기준으로 측정했을 때, 화면은 대각선 길이 기준 15.40cm입니다(실제로 보이는 영역은 이보다 좁음).</div>
+            
             <div class="flex">
             <div class="s5left">
               <div class="s5leftbox">새로운 배터리와 <br>ProMotion의 궁합이 <br>좋은 이유.</div>
-            <div class="plusbox">
+
+              <div class="plusbox">
             <button>자세히보기
               <span class="material-symbols-outlined">
                 add_circle
@@ -223,7 +314,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-scrollbar"></div>
+              <!-- <div class="swiper-scrollbar"></div> -->
             </div>
             </div>
             </div>
@@ -245,7 +336,8 @@
             <div class="s6textbox">
               <p class="s6text1">반가워요,<br>ProMotion.</p>
               <p class="s6text2">게임의 판도를 바꿀 획기적인 120Hz 가변 <br>재생률 디스플레이를 소개합니다.</p>
-          </div>
+          
+            </div>
           <div class="plusbox2">
             <button>자세히보기
               <span class="material-symbols-outlined">
@@ -383,9 +475,8 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="../js/pjB.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
+<script>AOS.init();</script>
+<script src="../js/ie-checker.js"></script>
 </body>
 
 </html>

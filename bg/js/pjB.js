@@ -19,10 +19,10 @@ var swiper = new Swiper(".basic", {
             $(".swiper").removeClass('white');
         }
         else if (this.realIndex == 1) {
-          $(".swiper").removeClass('white');
+          $(".swiper").addClass('white');
       }
           else if (this.realIndex == 2) {
-            $(".swiper").addClass('white');
+            $(".swiper").removeClass('white');
         }
         else if (this.realIndex == 3) {
           $(".swiper").addClass('white');
@@ -60,6 +60,17 @@ var swiper = new Swiper(".basic", {
     }
 });
 
+  window.addEventListener('resize' , () => {
+    let iw = window.innerWidth;
+    if (iw < 750) {
+      $('.s1img').attr("src", "../img/pjB/s1imgm.png")
+    }
+    else if (iw > 750){
+      $('.s1img').attr("src", "../img/pjB/s1img.png")
+
+    }
+  });
+
 
 
   var myswiper2 = new Swiper(".basic2", {
@@ -68,13 +79,21 @@ var swiper = new Swiper(".basic", {
       hide: true,
     },
     autoplay: {
-      delay: 1000,
+      delay: 2000,
       disableOnInteraction: false,
     },
   });
 
 
   $(function() {
+    let iw = window.innerWidth;
+    if (iw < 750) {
+      $('.s1img').attr("src", "../img/pjB/s1imgm.png")
+    }
+    else if (iw > 750){
+      $('.s1img').attr("src", "../img/pjB/s1img.png")
+
+    }
     $("#control a").click(function(){
         var num = Number($(this).text()) -1;
         $(this).addClass("on").siblings().removeClass("on");
@@ -86,26 +105,49 @@ var swiper = new Swiper(".basic", {
     });
         $("#control a:first").addClass("on").add("#pic > div:first").show();
 
-});
 
-$(document).ready(function() {
+
+
+  $(".s4plus").hide();
+  $(".s4 button").click(function() {
+    $(".s4plus").fadeIn();
+});
+  $(".close3").click(function(){
+    $(".s4plus").fadeOut();
+  })
+
+
+  
   $(".s5plus").hide();
-  $("button:eq(0)").click(function() {
+  $(".plusbox button").click(function() {
     $(".s5plus").fadeIn();
 });
+// $(".s5leftboxm button").click(function() {
+//   $(".s5plus").fadeIn();
+// });
   $(".close").click(function(){
     $(".s5plus").fadeOut();
   })
 });
 
+
 $(document).ready(function() {
   $(".s6plus").hide();
-  $("button:eq(1)").click(function() {
+  $(".plusbox2 button").click(function() {
     $(".s6plus").slideToggle();
 });
   $(".close2").click(function(){
     $(".s6plus").slideToggle();
   })
+
+
+  $(".mnav").hide();
+  $(".head button").click(function() {
+    $(".mnav").slideToggle();
+    $(this).children().text(function(e, text) {
+      return text === 'close' ? 'apps' : 'close'
+  });
+});
 });
 
 
