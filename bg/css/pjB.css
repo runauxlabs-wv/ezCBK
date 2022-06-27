@@ -145,25 +145,26 @@ footer.on {height: 1400px; transition: height 2s;}
 #control > .sierrablue{background-color: #97B1C8;}
 .s4{position: relative; width: 100%; height: 100vh; overflow: hidden;}
 .s4 button{position: absolute; font-size: 1.3vh; color: rgb(156, 156, 156); border: none; background: none; z-index: 2; bottom: 6%;}
+.s4 button:hover{color: black; transition: color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1)}
 .s4promax{position: relative; display: flex; height: 100vh; justify-content: center; align-items: center; z-index: 1;}
 .s4promax img{width: 40vh;}
-.pro{position: absolute; left: 63%; font-size: 2vh; font-weight: 400;}
-.pro span{font-weight: 600; font-size: 3vh;}
-.promax{position: absolute; left: 27%; font-size: 2vh; font-weight: 400;}
-.promax span{font-weight: 600; font-size: 3vh;}
-.s4XDR{position: absolute; bottom: 10%; font-size: 2.2vh; font-weight: 400;}
+.pro{position: absolute; right: 25%; font-size: 1vw; font-weight: 400;}
+.pro span{font-weight: 600; font-size: 1.7vw;}
+.promax{position: absolute; left: 25%; font-size: 1vw; font-weight: 400;}
+.promax span{font-weight: 600; font-size: 1.7vw;}
+.s4XDR{position: absolute; bottom: 10%; font-size: 1.2vw; font-weight: 400;}
 /* .xdr{position: absolute; width: 30vh; bottom: 42%; right: 21%;} */
 .s4plus{position: absolute; bottom: 0; width: 100%; height: 100vh; background: black; z-index: 2;}
 .con{position: absolute; width: 100%; height: 100vh; overflow: hidden; z-index: -1;}
 .bubble{position: relative; display: flex; justify-content: space-between;}
-.bubble span{position: relative; width: 40px; height: 20px; background: #4fc3dc; margin: 0 4px; border-radius: 50%; box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc; animation: s4 15s linear infinite; animation-duration: calc(200s / var(--del)); filter: blur(20px);}
-.bubble span:nth-child(even){background: #ff2d75; box-shadow: 0 0 0 10px #ff2d7544, 0 0 50px #ff2d75, 0 0 100px #ff2d75;}
+.bubble span{position: relative; width: 40px; height: 20px; background: #06a75c; margin: 0 4px; border-radius: 50%; box-shadow: 0 0 0 10px #4fc3dc44, 0 0 50px #4fc3dc, 0 0 100px #4fc3dc; animation: s4 15s linear infinite; animation-duration: calc(200s / var(--del)); filter: blur(20px);}
+.bubble span:nth-child(even){background: #e8ff64; box-shadow: 0 0 0 10px #ffd6e444, 0 0 50px #ff2d75, 0 0 100px #ff2d75;}
 
 .s4plusinner{display: flex; position: relative; height: 100vh; justify-content: center; align-items: center;}
 .s4plusinner img{width: 40vh;}
-.s4plustext{position: absolute; left: 15%; top: 25%; line-height: 40px; font-size: 4vh; color: rgb(179, 179, 179); z-index: 10;}
+.s4plustext{position: absolute; left: 12%; top: 25%; line-height: 2.3vw; font-size: 2.3vw; color: rgb(179, 179, 179); z-index: 10;}
 .s4plustext span{color: white;}
-.s4plustext2{position: absolute; font-size: 1.5vh; font-weight: 500; text-align: justify; left: 63%; top: 60%; color: rgb(179, 179, 179); z-index: 10;}
+.s4plustext2{position: absolute; padding: 0 30px 0 0; font-size: 1vw; font-weight: 400; text-align: justify; left: 70%; top: 60%; color: rgb(179, 179, 179); z-index: 10;}
 .s4plustext2 span{color: white;}
 .close3{position: absolute; color: white; left: 50%; bottom: 10%;}
 .close3 span{font-size: 2vw;}
@@ -173,16 +174,20 @@ footer.on {height: 1400px; transition: height 2s;}
 .s5m{display: none;}
 .s5mobile{display: none;}
 .s5mtitle{display: none;}
+.s3mtitle{display: none;}
+.s3mtitle2{display: none;}
 .s5mtitle2{display: none;}
 
 .s5bg{padding: 0 150px 0 0;}
 .basic2{width: 600px; height: 300px;}
 .box1{width: 600px; position: relative;}
-.box1 div{font-size: 65px; width: 550px;}
+.box1 div{font-size: 45px; width: 550px;}
 .box1 p{color: gray; font-size: 20px;}
-.box1p{position: absolute; right: 120px; bottom: 15px;}
-.box2p{position: absolute; right: 230px; bottom: 110px;}
-.box3p{position: absolute; right: 230px; bottom: 15px;}
+.box1p{position: absolute; right: 200px; bottom: 0px;}
+.box2p{position: absolute; right: 290px; bottom: 65px;}
+.box3p{position: absolute; left: 0; bottom: -60px;}
+.box4p{position: absolute; right: 180px; bottom: 0px;}
+
 .s5left{width: 550px;}
 .s5left button{border: solid black 2px; border-radius: 980px; padding: 4px 10px; background-color: white; font-size: 15px; display: flex; align-items: center; margin: 0 auto; margin-top: 50px;}
 .s5left button:hover{animation: btn 1.5s infinite; background-color: #000; color: white;}
@@ -209,10 +214,10 @@ footer.on {height: 1400px; transition: height 2s;}
 .memobg2::after{background-color: #00ffff; z-index: -1; animation: memobg1 4s ease infinite;}
 .memobg2::before{background-color: #ff0072; z-index: -2; animation: memobg2 4s ease infinite;}
 
-.number{display: flex; color: rgb(255, 255, 255); font-size: 2vw; font-weight: 300; letter-spacing: 25px; justify-content: center; position: absolute; width: 100%; bottom: 15%; z-index: 200;}
+.number{display: flex; color: rgb(255, 255, 255); font-size: 2vw; font-weight: 300; letter-spacing: 40px; justify-content: center; position: absolute; width: 100%; bottom: 15%; z-index: 200;}
 .s6{position: relative; overflow: hidden;}
 .s6textbox{position: absolute; top: 15%; left: 10%;}
-.plusbox2{position: absolute; left: 10%; bottom: 40%;}
+.plusbox2{position: absolute; left: 0; bottom: -20%; z-index: 1000;}
 .s6 button{border: solid black 2px; border-radius: 980px; background: none; font-size: 15px; font-weight: 700; display: flex; justify-content: center; align-items: center; width: 120px; height: 35px;}
 .s6 button:hover{animation: btn 1.5s infinite; background-color: #000; color: white;}
 .s6text1{font-size: 5vw; line-height: 5.4vw;}
@@ -220,11 +225,14 @@ footer.on {height: 1400px; transition: height 2s;}
 .s6plus{position: absolute; bottom: 0; width: 100%; height: 100vh; background-color: #FBFAFF; z-index: 1000;}
 .close2{position: absolute; right: 100px; top: 80px; font-size: 60px;}
 .s6bg{position: absolute; right: -2px; bottom: 0;}
+.s6bgm{display: none;}
 .s6bgplus{position: absolute; bottom: -150px; right: 20%; overflow: hidden;}
+.s6mbgplus{display: none;}
 .s6plusinner{display: flex; justify-content: space-around; width: 1200px; margin: 0 auto; margin-top: 80px;}
 .s6plustext1{width: 340px; font-size: 23px; font-weight: 500; text-align:left;}
 .s6plustext2{width: 400px; font-size: 20px; font-weight: 400; text-align: left; color: gray;}
-
+.s6plusmtext2{display: none;}
+.s6plusmtext{display: none;}
 .s7{position: relative; overflow: hidden;}
 .s7inner{width: 1100px; margin: 0 auto; padding-top: 120px;}
 .s7toptextbox{display: flex; justify-content: space-between; color: white;}

@@ -2,7 +2,7 @@
 .head{background-color:rgba(0, 0, 0, 0.6); align-items:flex-start; height: auto; min-height: 50px;}
 .head button{display: block; position: absolute; right: 10px; top: 7px; background: none; border: none; color: rgb(184, 184, 184);}
 .mheadtitle{display: block; position: absolute; left: 10px; top: 11px;}
-.mheadtitle a{color: rgb(163, 163, 163);}
+.mheadtitle a{color: rgb(163, 163, 163); font-size: 2vh;}
 .mnav{display: block; position: relative; padding: 0 0 100px;  top: 50px; width: 100%; z-index: 10; border-top: solid gray 1px;}
 .mmenu{display: flex; flex-direction: column; width: 80%; margin: 0 auto; margin-top: 20px;}
 .mmenu a{color: white; height: 40px; line-height: 40px; border-bottom: solid gray 1px;}
@@ -20,42 +20,48 @@
 .s1textboxm{display: inline-block; color: rgb(109, 109, 109);}
 .s1textboxm span{font-size: 30px; color: black;}
 .line{border-top: none;}
-.s1img{position:relative; display: block; margin: 0 auto; bottom: 0; width: 30vh; height: 70vh;}
+.s1img{position:relative; display: block; margin: 0 auto; bottom: -70px; width: 33vh; height: 70vh;}
 .scroll{display: none;}
 
 
 .s2{background-color: rgb(0, 0, 27);}
 .s2left{display: none;}
 .s2right{display: none;}
-.s2mobile{display: flex; flex-direction: column; padding-top: 100px; margin: 0 auto;}
-.s2mobile p{font-size: 2.4vh; font-weight: 200; padding-top: 50px; margin: 0 auto; text-align: center; width: 190px; color: rgb(255, 255, 255);}
-.pro{top: 18%;}
-.promax{font-size: 2vh; top: 12%;}
+.s2mobile{display: flex; flex-direction: column; padding-top: 170px; margin: 0 auto;}
+.s2mobile p{font-size: 2vh; font-weight: 200; padding-top: 50px; margin: 0 auto; text-align: center; width: 200px; color: rgb(255, 255, 255);}
+.s4promax img{width: 35vh;}
+.s4plus img{width: 35vh;}
+.close3{left: 90%; top: 10%;}
+.close3 span{font-size: 40px; font-weight: 300;}
+.pro{top: 23%; right: 10%; font-size: 1.5vh;}
+.pro span{font-size: 2.2vh;}
+.promax{font-size: 1.5vh; top: 18%; left: 28%;}
+.promax span{font-size: 2.2vh;}
 .s2mtitle{text-align: center; color: rgb(255, 255, 255); font-size: 27px; text-transform: uppercase; letter-spacing: -2px; margin-bottom: 50px;}
-.s4XDR{font-size: 2.2vh;}
-.s4 button{font-size: 2vh; bottom: 5%;}
+.s4XDR{font-size: 1.5vh; bottom: 18%;}
+.s4 button{font-size: 1.5vh; bottom: 13%;}
+.s4plustext{left: 15%; top: 17%; line-height: 20px; font-size: 23px;}
+.s4plustext2{font-size: 12px; font-weight: 400; text-align: left; left: 10%; top: 78%;}
 
 
 .s3bg{display: none;}
 .s3head{border-bottom: none;}
 .s3mbg{position: absolute; bottom: 0; left: 0; margin-right: -137.5px; display: block; width: 50vh;}
-.s3mbg2{display:block; position: absolute; bottom: 30%; right: 20%;}
-.s3head{font-size: 2.4vh;}
-.s3box{left: 3%; top: 20%;}
-.s3box2{left: 13%; top: 20%;}
-.s3box3{left: 23%; top: 20%;}
-.s3box p{font-size: 1.9vh;}
-.s3box2 p{font-size: 1.9vh;}
-.s3box3 p{font-size: 1.9vh;}
-
+.s3mbg2{display:block; position: absolute; bottom: 50%; right: 50%;}
+.s3mtitle{display: block; text-align: center; color: rgb(255, 255, 255); font-size: 3.5vh; text-transform: uppercase; margin-top: 90px;}
+.s3mtitle2{display: flex; justify-content: space-around; color: white; margin-top: 30px;}
+.s3mtitle2 div{font-size: 2vh; font-weight: 500;}
+.s3mtitle2 p{font-size: 1.2vh; font-weight: 300;}
+.s3head{display: none;}
+.s3box{display: none;}
+.s3box2{display: none;}
+.s3box3{display: none;}
 
 
 .s2button{right: 140px; top: 700px;}
 .s2button{font-size: 16px;}
 .s2textbox{font-size: 2.5vh;}
 .memotext{font-size: 35vw; letter-spacing: 0;}
-.number{bottom: 30%;}
-.memotext2{top: 25%;}
 .memobg{width: 15vw; height: 25vw;}
 .memobg2{width: 15vw; height: 25vw;}
 
@@ -65,23 +71,45 @@
 .s5leftbox{display: none;}
 .plusbox button{display: none;}
 .flex{display: none;}
-.s5mtitle{display: block; text-align: center; color: rgb(0, 0, 0); font-size: 27px; text-transform: uppercase; letter-spacing: -2px; margin-bottom: 70px;}
+.s5mtitle{display: block; text-align: center; color: rgb(0, 0, 0); font-size: 6vw; text-transform: uppercase; letter-spacing: -2px; margin-top: 50px;}
 .s5mtitle2{display:block; font-size: 12px; margin: 0 20px; color: gray; font-weight: 300; position: absolute; bottom: 20px;}
-.s5mobile{display: block; margin: 0 auto; width: 500px;}
+.s5mobile{display: block; margin: 0 auto; width: 100vw; margin-top: 80px;}
 .s5m{display: block;}
-.basic2{height: 180px; padding-left: 25%;}
-.box1 div{font-size: 25px; font-weight: 600; margin-bottom: 10px;}
-.box1 p{font-size: 15px;}
+.basic2{height: 180px; padding-left: 19%;}
+.box1 div{font-size: 4.5vw; font-weight: 500; margin-bottom: 10px;}
+.box1 p{font-size: 1.8vh; font-weight: 300;}
 
 
-.memotext{ font-size: 50vw; font-weight: bolder;}
-.memotext2{font-size: 4vw; font-weight: 400; color: gray;}
-.number{bottom: 25%; font-size: 3vw; font-weight: 500; color: gray;}
+.memotext{font-size: 50vw; font-weight: bolder;}
+.memotext2{font-size: 4vw; font-weight: 400; color: gray; top: 28%; letter-spacing: 5px;}
+.number{bottom: 28%; font-size: 4vw; font-weight: 500; letter-spacing: 25px; color: gray;}
 .memo video{display: none;}
 .memobg::before, .memobg::after{display: none;}
 
 
 .s6bg{display: none;}
+.s6bgm{display: block; width: 1100px; position: absolute; right: -470px; bottom: 0;}
+.plusbox2{bottom: -17%; left: -6%;}
+.plusbox2 span{display: none;}
+.s6 button{border:none; font-size: 1.5vh; color: rgb(156, 156, 156); font-weight: 400;}
+.s6text1{font-size: 10vw; line-height: 12vw;}
+.s6text2{font-size: 4vw; font-weight: 300;}
+.s6plus video{display: none;}
+.close2{right: 10%; top: 10%; font-size: 40px; font-weight: 300;}
+.s6mbgplus{position:absolute; display: block; margin: 0 auto; bottom:0; width: 99vw;}
+.s6plusinner{display: none;}
+.s6plusmtext2{display: block; font-size: 2.5vw; font-weight: 200; position: absolute; top: 40%; padding: 0 50px;}
+.s6plusmtext{display: block; font-size: 3vw; font-weight: 400; position: absolute; top: 30%; padding: 0 50px; color: black;}
+
+.s7inner{width: 80%; margin: 0 auto; padding-top: 90px;}
+.s7toptext1{font-size: 4vw;}
+.s7toptext2{font-size: 2.3vw; font-weight: 400; color: gray;}
+.s7button{font-size: 2vw;}
+.s7button span{display: none;}
+.s7inner img{width: 10vw; margin-bottom: 60px;}
+
+.footer{display: none;}
+
 
 
 .swiper-pagination-bullet{width: 15px;}
