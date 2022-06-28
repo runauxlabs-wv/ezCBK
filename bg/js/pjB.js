@@ -19,7 +19,7 @@ var swiper = new Swiper(".basic", {
             $(".swiper").removeClass('white');
         }
         else if (this.realIndex == 1) {
-          $(".swiper").addClass('white');
+          $(".swiper").removeClass('white');
       }
           else if (this.realIndex == 2) {
             $(".swiper").removeClass('white');

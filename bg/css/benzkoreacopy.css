@@ -1,8 +1,12 @@
 @charset "utf-8";
 @import url("https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 		/* Material Icons Outlined*/
-* {margin: 0; padding: 0; font-family: 'IBM Plex Sans KR', sans-serif; color: white;}
-body{background:url(../img/benzkorea/testbg.png) no-repeat; background-size: cover;}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+
+* {margin: 0; padding: 0; font-family: 'IBM Plex Sans KR', sans-serif; color: white;
+    /* outline: solid red 1px; */
+}
+body{background-color: black;}
 a{text-decoration: none;}
 .logo{display: flex; color: white; align-items: center; font-size: 1.2rem; position: absolute; left: 20px;}
 .logo img{width: 50px; height: 50px;}
@@ -251,49 +255,71 @@ h1{text-align: center; font-size: 50px; font-weight: 10; margin-top: 250px;}
 .sec3left{display: flex; flex-direction: column; width: 800px;}
 .sec3right{display: flex; flex-direction: column; width: 600px; margin-left: 20px;}
 .sec3inner{display: flex; width: 1400px; margin: 0 auto; padding-top: 100px; position: relative;}
-.sec4{width: 100%; height: 900px; position: relative;}
-/* background: url(../img/benzkorea/sec3bg.png) no-repeat; background-size:cover; background-position: 50%; */
-.sec4inner{width: 1400px; margin: 0 auto; position: relative; overflow: hidden;}
-.sec4text{line-height: 35px; padding: 30px 0;}
-.sec4text2{position: absolute; right: 100px; top: 160px; font-size: 30px; color: rgb(255, 255, 255);}
-.sec4button{text-transform: uppercase;
-    text-align: center;
-    position: relative;
-    text-decoration: none;
-    padding-bottom: 3px;
-    color: rgb(201, 201, 201);
+.sec4{width: 100%; padding-top: 200px; position: relative;}
+.sec4inner{width: 1400px; margin: 0 auto;}
+.sec4tab{
+    width: 100%;
+    padding: 100px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.sec4tab ul{
+    width: 13%;
+    display: flex;
+    flex-direction: column;
+}
+.sec4tab ul li{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
     font-size: 18px;
-    display:inline-block;}
-.sec4button::before{
-        content: '';
-        position: absolute;
-        bottom: 0%;
-        left: 0px;
-        width: 100%;
-        height: 2px;
-        background: #fafafa;
-        display: block;
-        -webkit-transform-origin: right top;
-        -ms-transform-origin: right top;
-        transform-origin: right top;
-        -webkit-transform: scale(0, 1);
-        -ms-transform: scale(0, 1);
-        transform: scale(0, 1);
-        -webkit-transition: transform 0.4s cubic-bezier(1, 0, 0, 1);
-        transition: transform 0.4s cubic-bezier(1, 0, 0, 1)}
-.sec4button:hover::before {
-        -webkit-transform-origin: left top;
-        -ms-transform-origin: left top;
-        transform-origin: left top;
-        -webkit-transform: scale(1, 1);
-        -ms-transform: scale(1, 1);
-        transform: scale(1, 1)}
-.sec4button:hover{color: white;}
-.po1{position: absolute; right: 100px; top: 300px;}
-.po2{position: absolute; right: 100px; top: 350px;}
-.po3{position: absolute; right: 100px; top: 400px;}
-.sec4text p{font-size: 40px; font-weight: bolder;}
-/* .sec4text span{color: rgb(173, 173, 173); font-size: 15px; font-weight: 500; border-bottom: solid rgb(173, 173, 173) 1px;} */
+    margin: 0 0 2px 0;
+    font-weight: bold;
+    color: gray;
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+}
+.sec4tab ul li.on{color: white;}
+.sec4tab ul li:hover::after,
+.sec4tab ul li.on::after{
+    width: 100%;
+    height: 2px;
+    background: rgb(218, 218, 218);
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 5s cubic-bezier();
+}
+.sec4tab ul li:hover::after{ background: rgba(255,255,255,0.3); }
+.sec4tab .content{
+    width: 87%;
+    /* background:#ccc; */
+    padding: 0 40px;
+    color: #333;
+}
+.sec4tab .content .conBox{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.sec4tab .content .conBox.on{ display:block;}
+.s4box1{display: flex; flex-direction: column; justify-content: space-between; align-items: center; width: 380px; height: 200px; font-size: 18px; padding-bottom: 100px;}
+.s4box1:hover{background-color: gray; transition: all 1s;}
+.s4boxinner{width: 100%; overflow: hidden; display: flex; flex-wrap: wrap;}
+.s4boximg{width: 290px;}
+
+
+
+
+
+
+
+
+
+
 .heighttext{position: absolute; left: 570px; top: 310px; transform:rotate(90deg); letter-spacing: 5px;}
 .button{position: absolute; bottom: 50px; left: 50%;}
 .button span{color: rgb(223, 223, 223);}
@@ -308,20 +334,6 @@ h1{text-align: center; font-size: 50px; font-weight: 10; margin-top: 250px;}
 .search{display: block; width: 40px; height: 40px; line-height: 40px; background-color: gray; font-size: 35px; border: solid white 1px;}
 .sb{display: flex; align-items: center; margin-left: 50px; margin-top: 200px;}
 .sel{display: flex; justify-content: center; margin-bottom: 50px; margin-top: 10px;}
-.sel span{color: gray;}
-.sel span:hover{color: white;}
-.sec04text{display: block; width: 350px; text-align: center; height: 30px; line-height: 30px; border: solid white 1px;}
-.sec04box{display: flex; flex-direction: column; width: 350px; height: 330px; padding: 40px 60px; border-collapse:separate;}
-.testbox a:hover{background-color: rgb(54, 54, 54); border: none;}
-.testbox a:first-child{border-bottom: none;}
-.sec04box p{margin-bottom: 40px;}
-.sec04box:hover{background-color: rgb(110, 110, 110); transition: 0.8s;}
-.sidemenu{width: 10%; text-align: center; font-size: 25px; border-right: solid rgb(175, 175, 175) 1px;}
-.sidemenu a{color: gray;}
-.sidemenu a:hover{color: white;}
-.sidemenu li{margin: 20px 0; font-size: 30px;}
-.sec04{display: flex; margin-top: 50px;}
-.sec04inner{display: flex; flex-wrap: wrap; width: 1600px; margin-left: 40px;}
 .sns{display: flex;}
 .sns img{padding: 0 10px; opacity: 40%;}
 .sns img:hover{opacity: 100%;}

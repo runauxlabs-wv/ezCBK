@@ -21,3 +21,10 @@ var swiper2 = new Swiper(".basic2", {
     clickable: true,
   },
 });
+
+$(function(){
+  $(".sec4tab ul li").click(function(){
+    $(this).addClass('on').siblings().removeClass('on');
+    $("#"+$(this).data('id')).addClass('on').siblings().removeClass('on');
+});
+});
