@@ -1,5 +1,6 @@
 /* *{outline: solid red 1px;} */
 body::-webkit-scrollbar {display: none;}
+body video{display: none;}
 .head{background-color:rgba(0, 0, 0, 0.6); align-items:flex-start; height: auto; min-height: 50px; border-bottom: solid rgb(109, 109, 109) 1px;}
 .head button{display: block; position: absolute; right: 10px; top: 7px; background: none; border: none; color: rgb(184, 184, 184);}
 .mheadtitle{display: block; position: absolute; width: 90px; left: 10px; top: 11px;}
@@ -33,16 +34,16 @@ body::-webkit-scrollbar {display: none;}
 .s4promax img{width: 35vh;}
 .s4plus img{width: 35vh;}
 .close3{left: 90%; top: 10%;}
-.close3 span{font-size: 40px; font-weight: 300;}
+.close3 span{font-size: 30px; font-weight: 300;}
 .pro{top: 18%; right: 18%; width: 100px; font-size: 1.5vh;}
 .pro span{font-size: 2.2vh;}
 .promax{font-size: 1.5vh; top: 18%; left: 28%;}
 .promax span{font-size: 2.2vh;}
 .s2mtitle{text-align: center; color: rgb(255, 255, 255); font-size: 27px; text-transform: uppercase; letter-spacing: -2px; margin-bottom: 50px;}
 .s4XDR{font-size: 1.5vh; bottom: 18%;}
-.s4 button{font-size: 1.5vh; bottom: 13%;}
-.s4plustext{left: 15%; top: 17%; line-height: 20px; font-size: 23px;}
-.s4plustext2{font-size: 12px; font-weight: 400; text-align: left; left: 10%; top: 78%;}
+.s4 button{font-size: 1.6vh; bottom: 13%;}
+.s4plustext{left: 15%; top: 12%; line-height: 18px; font-size: 18px;}
+.s4plustext2{font-size: 10px; font-weight: 400; text-align: left; left: 10%; top: 80%;}
 
 
 .s3bg{display: none;}
@@ -92,7 +93,7 @@ body::-webkit-scrollbar {display: none;}
 .s6bgm{display: block; width: 100vh; position: absolute; right: -250px; bottom: 0;}
 .plusbox2{bottom: -20%; left: 0;}
 .plusbox2 span{display: none;}
-.s6 button{border:none; font-size: 1.5vh; color: rgb(156, 156, 156); font-weight: 400;}
+.s6 button{border:none; font-size: 14px; color: rgb(156, 156, 156); font-weight: 400;}
 .s6text1{font-size: 9vw; line-height: 10vw;}
 .s6text2{font-size: 3vw; font-weight: 400;}
 .s6plus video{display: none;}
