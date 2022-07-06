@@ -1,6 +1,6 @@
 /* *{outline: solid red 1px;} */
 body::-webkit-scrollbar {display: none;}
-body video{display: none;}
+body video{display: none!important;}
 .head{background-color:rgba(0, 0, 0, 0.6); align-items:flex-start; height: auto; min-height: 50px; border-bottom: solid rgb(109, 109, 109) 1px;}
 .head button{display: block; position: absolute; right: 10px; top: 7px; background: none; border: none; color: rgb(184, 184, 184);}
 .mheadtitle{display: block; position: absolute; width: 90px; left: 10px; top: 11px;}

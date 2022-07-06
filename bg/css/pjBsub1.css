@@ -37,21 +37,28 @@ button{background: none; border: none; font-size: 19px; font-weight: 600; color:
 
 .s1{position: relative; width: 100%; height: 100vh; overflow: hidden; background-color: rgb(233, 233, 233);}
 .sec1textbox{display: flex; flex-direction: column; justify-content:end; margin: 0 auto; align-items: center; width: 70%; height: 100vh; text-align: center; position: relative;}
-.sec1textbox p{font-size: 0.8vw; width: 700px; margin: 3% 0 10% 0; font-weight: 400; color: gray; position: relative; z-index: 2;}
+.sec1textbox p{font-size: 0.8vw; margin: 3% 0 10% 0; font-weight: 400; color: gray; position: relative; z-index: 2;}
 h1{font-size: 3.5vw; font-weight: bolder; line-height: 3.7vw; position: relative; z-index: 2;}
 .sec1bg{position: absolute; width: 16vw; top: 0; left: 8%; z-index: 1;}
 .sec1bg2{position: absolute; width: 29vw; top: 20%; left: 30%; z-index: 1;}
 .sec1bg3{position: absolute; width: 29vw; bottom: 0; left: -5%; z-index: 1;}
 .sec1bg4{position: absolute; width: 16vw; top: -15%; right: 15%; z-index: 1;}
-.sec1bg5{position: absolute; width: 16vw; bottom: -20%; right: 5%; z-index: 1;}
+.sec1bg5{position: absolute; width: 16vw; bottom: 0%; right: 5%; z-index: 1;}
 .sec1bg6{position: absolute; width: 16vw; top: -45%; left: 30%; z-index: 1;}
 .sec1bg7{position: absolute; width: 16vw; top: -15%; right: -8%; z-index: 1;}
 .sec1bg8{position: absolute; width: 16vw; top: -45%; left: 50%; z-index: 1;}
 .sec1bg9{position: absolute; width: 29vw; top: 33%; left: -23%; z-index: 1;}
+.msec1bg{display: none;}
+.msec1bg2{display: none;}
+.msec1bg3{display: none;}
+.msec1bg4{display: none;}
+.msec1bg6{display: none;}
+.msec1bg7{display: none;}
 
 
 
-.s2{width: 100%;}
+
+.s2{width: 100%; overflow: hidden;}
 .inner{width: 1300px; margin: 0 auto; padding: 100px 0;}
 .sec2box1{overflow: hidden; position: relative; display: flex; flex-direction: column; justify-content: space-between; align-items: center;
     width: 100%; height: 500px; background: #d3d2d8; border-radius: 25px; padding-top: 15px; z-index: 10; margin: 20px 0;}
@@ -117,7 +124,7 @@ h1{font-size: 3.5vw; font-weight: bolder; line-height: 3.7vw; position: relative
 .sec4leftbox1:hover button{opacity: 1; transition: all 2s; animation: arrow 2s infinite;}
 .sec4leftbox1:hover img,.sec4leftbox1:hover h3,.sec4leftbox1:hover h2{filter: blur(14px); transition: filter 0.3s;}
 .box4plus{position: absolute; top: 0; background-color: black; width: 100%; height: 100%; z-index: 100; padding-top: 150px;
-display: flex; flex-direction: column; text-align: center;}
+    display: flex; flex-direction: column; text-align: center;}
 .box4plus p{color: rgb(255, 255, 255); font-size: 20px; font-weight: 500;}
 .box4plus h4{color: gray; font-size: 16px; font-weight: 500; padding-top: 50px; width: 80%; margin: 0 auto;}
 .close4{position: absolute; top: 6%; right: 3%; font-size: 30px; color: white;}
@@ -144,7 +151,7 @@ display: flex; flex-direction: column; text-align: center;}
 
 
 
-.sec4right{width: 50%; background-color: black; border-radius: 25px; margin: 10px 0 0 10px; overflow: hidden; position: relative; display: flex; flex-direction: column; justify-content: space-between; align-items: center;}
+.sec4right{width: 50%; background-color: black; border-radius: 25px; margin: 20px 0 0 10px; overflow: hidden; position: relative; display: flex; flex-direction: column; justify-content: space-between; align-items: center;}
 .sec4right img{position: absolute; width: 100%; height: 100%; z-index: 1;}
 .sec4righttextbox1{position: absolute; top: 70px; left: 50px; z-index: 2;}
 .sec4right h3{font-size: 23px; color: gray; font-weight: 600;}

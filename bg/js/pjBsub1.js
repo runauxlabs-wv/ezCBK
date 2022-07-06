@@ -1,10 +1,10 @@
 window.addEventListener('resize' , () => {
-    let ih = window.innerHeight;
-    if (ih < 871) {
-      $('.sec1 img').css("transform", "scale(0.7)")
+    let iw = window.innerWidth;
+    if (iw < 551) {
+      $('.s1 img').css("transform", "scale(0.8)")
     }
-    else if (ih > 870){
-        $('.sec1 img').css("transform", "scale(1)")
+    else if (iw > 750){
+        $('.s1 img').css("transform", "scale(1)")
 
     }
   });
@@ -69,3 +69,23 @@ window.addEventListener('resize' , () => {
       event.stopPropagation();
     })
   });
+
+  
+$(document).ready(function () {
+  $(".s6plus").hide();
+  $(".plusbox2 button").click(function () {
+    $(".s6plus").slideToggle();
+  });
+  $(".close2").click(function () {
+    $(".s6plus").slideToggle();
+  })
+
+
+  $(".mnav").hide();
+  $(".head button").click(function () {
+    $(".mnav").slideToggle();
+    $(this).children().text(function (e, text) {
+      return text === 'close' ? 'apps' : 'close'
+    });
+  });
+});
