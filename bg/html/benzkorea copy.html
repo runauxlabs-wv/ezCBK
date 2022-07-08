@@ -6,7 +6,7 @@
     <title>Mercedes-Benz</title>
     <script src="../js/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="../css/benzkoreacopy.css">
 </head>
 <!-- https://swiperjs.com/demos -->
@@ -59,12 +59,12 @@
     <video muted autoplay loop>
         <source src="../video/sclass.mp4" type="video/mp4">
     </video>
-    <div class="sec01text" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2000"><span>s</span>ensuous <span>d</span>esign</div>
-    <div class="sec01text2" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="2500"><span>f</span>or Mercedes-Benz</div>
-    <div class="sec01line" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="2800"></div>
-    <div class="sec01line2" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="3000"></div>
+    <div class="sec01text" data-aos="fade-up" data-aos-duration="2000" data-aos-delay="2000" data-aos-mirror="true"><span>s</span>ensuous <span>d</span>esign</div>
+    <div class="sec01text2" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="2500" data-aos-mirror="true"><span>f</span>or Mercedes-Benz</div>
+    <div class="sec01line" data-aos="fade-left" data-aos-duration="2000" data-aos-delay="2800" data-aos-mirror="true"></div>
+    <div class="sec01line2" data-aos="fade-down" data-aos-duration="2000" data-aos-delay="3000" data-aos-mirror="true"></div>
 
-    <div class="scroll" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="3000">
+    <div class="scroll" data-aos="zoom-in" data-aos-duration="2000" data-aos-delay="3000" data-aos-mirror="true">
       <div class="scrollball"></div>
       <span class="material-symbols-outlined dbarrow">
         keyboard_double_arrow_down
@@ -732,10 +732,9 @@
 
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="../js/benzkorea.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
-  </script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init({mirror: true})</script>
+
 </body>
 
 </html>

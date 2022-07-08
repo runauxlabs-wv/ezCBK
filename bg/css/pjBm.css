@@ -63,10 +63,6 @@ body video{display: none!important;}
 .s2button{right: 140px; top: 700px;}
 .s2button{font-size: 16px;}
 .s2textbox{font-size: 2.5vh;}
-.memotext{font-size: 35vw; letter-spacing: 0;}
-.memobg{width: 15vw; height: 25vw;}
-.memobg2{width: 15vw; height: 25vw;}
-
 
 .s5inner{width: 100%; padding-top: 100px;}
 .s5inner video{display: none;}
@@ -82,11 +78,13 @@ body video{display: none!important;}
 .box1 p{font-size: 2vw; font-weight: 400;}
 
 
-.memotext{font-size: 50vw; font-weight: bolder;}
+.memotext{font-size: 50vw; font-weight: bolder; letter-spacing: 0;}
 .memotext2{font-size: 4vw; font-weight: 400; color: gray; top: 28%; letter-spacing: 5px;}
 .number{bottom: 28%; font-size: 4vw; font-weight: 500; letter-spacing: 25px; color: gray;}
 .memo video{display: none;}
-.memobg::before, .memobg::after{display: none;}
+.memobg{bottom: 10%; left: 30%; width: 150px; height: 150px;}
+.memobg2{top: 10%; right: 30%; width: 150px; height: 150px;}
+/* .memobg::before, .memobg::after{display: none;} */
 
 
 .s6bg{display: none;}
