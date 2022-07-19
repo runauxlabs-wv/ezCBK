@@ -58,11 +58,11 @@ section{
 
 .nav ul{position: relative; display: flex; flex-direction: column;}
 .nav ul li{list-style: none;}
-.nav ul li a{position: relative; display: block; text-decoration: none; text-transform: uppercase; font-size: 2em; color: white; font-weight: 700; transition: 0.5s; transition-delay: 0.2s}
+.nav ul li a{position: relative; display: block; text-decoration: none; text-transform: uppercase; font-size: 2em; color: rgb(70, 70, 70); font-weight: 700; transition: 0.5s; transition-delay: 0.2s}
 .nav ul li a::before{content: attr(data-text); position: absolute; font-size: 0.5em; letter-spacing: 60px; color: rgb(255, 255, 255); text-shadow: 0 0 10px rgb(244, 252, 227), 0 0 30px rgb(224, 252, 227);  bottom: -11px; pointer-events: none; z-index: 1; opacity: 0; transition: 0.5s;}
-.nav ul li a:hover{color: rgb(255, 255, 255, 0.2);}
+.nav ul li a:hover{color: rgba(255, 255, 255);}
 
-.nav ul li a.on{color: rgb(255, 255, 255, 0.2); transform: translateY(-10px);}
+.nav ul li a.on{color: rgba(255, 255, 255); transform: translateY(-10px);}
 .nav ul li a.on::before{letter-spacing: 3px; opacity: 1; transition-delay: 0.2s;}
 
 .sec01{position: relative; height: 100%; z-index: 1;}
@@ -241,11 +241,11 @@ h3{font-size: 25px; margin: 10px 0;}
 .end{position: absolute; bottom: 3%; color: rgb(168, 168, 168); z-index: 2;}
 .tel{position: absolute; top: 300px; left: 200px;; display: flex; align-items: center; font-size: 40px; font-weight: bold; color: rgb(255, 255, 255); z-index: 3;}
 .tel span{font-size: 40px; font-weight: 500; margin-right: 10px;}
-.tel2{position: absolute; top: 360px; left: 245px; z-index: 2; font-size: 60px; font-weight: 900; letter-spacing: 5px;}
+.tel2{position: absolute; top: 360px; left: 245px; z-index: 2; font-size: 80px; font-weight: 900; letter-spacing: 5px;}
 .text{position: absolute; z-index: 2; top: -600px; transform:skewY(345deg) translateY(-200px); animation: anicolor 5s linear infinite;}
 .mail{position: absolute; top: 550px; left: 200px;; display: flex; align-items: center; font-size: 40px; font-weight: bold; color: rgb(255, 255, 255); z-index: 3;}
 .mail span{font-size: 40px; font-weight: 500; margin-right: 10px;}
-.mail2{position: absolute; top: 600px; left: 245px; z-index: 2; font-size: 60px; font-weight: 900; letter-spacing: 5px;}
+.mail2{position: absolute; top: 600px; left: 245px; z-index: 2; font-size: 80px; font-weight: 900; letter-spacing: 5px;}
 
 .text div{position: relative; width: 100%; font-size: 8em; font-weight: 900; pointer-events: none; line-height: 1em; white-space: nowrap; text-shadow: calc(var(--x)) 100px 0 rgba(255,255,255,0.1); transform: translateX(calc(0% - var(--x) * var(--i)));}
 .text div span{color: rgb(92, 51, 51); margin: 0 10px;}

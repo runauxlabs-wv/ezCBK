@@ -138,10 +138,21 @@ $(".nav li:lt(3) a").each(function () {
 });
 $(".nav li").last().find("a").click(function () {
   let contact = $(".sec05").offset().top;
-  $('html, body').scrollTop(contact);
+  $('html, body').animate({
+    scrollTop: contact
+  }, 500);
   $(this).addClass('on');
-  return false;
-});
+ return false;
+ });
+
+
+
+// $(".nav li").last().find("a").click(function () {
+//   let contact = $(".sec05").offset().top;
+//   $('html, body').scrollTop(contact);
+//   $(this).addClass('on');
+//   return false;
+// });
 
 
 
