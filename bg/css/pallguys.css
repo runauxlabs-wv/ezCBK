@@ -1,0 +1,67 @@
+@charset "utf-8";
+@import url("https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+@font-face {
+  font-family: 'RixInooAriDuriR';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2207-01@1.0/RixInooAriDuriR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+body{height: 1600px !important;}
+*{margin: 0; padding: 0; font-family: 'RixInooAriDuriR';
+    /* outline: solid red 1px; */
+}
+@keyframes ct {
+  100% {transform: translate(0,80px);}
+  50% {transform: translate(0,50px);}
+  0% {transform: translate(0,80px);}
+}
+.container{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+  }
+  .container section{
+    min-width:100%;
+    height:auto;
+    height:100vh;
+  }
+.sec1inner{position: relative; width: 100%; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; overflow: hidden; clip-path: polygon(0% 0%, calc(100% - 6vw) 0%, 100% 100%, 0% 100%);}
+.sec1inner::after{position: absolute; background: url(../img/benzkorea/pattern.png) repeat 50% 50% / 4px 4px; content: ""; display: block; width: 100%; height: 100vh; z-index: 2;}
+#s1bg{position: absolute; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: 2;}
+.titletext{position: relative; z-index: 3; text-align: center; font-size: 75px; color: rgb(255, 255, 255); -webkit-text-stroke: 3px rgb(255, 48, 164); text-shadow: 6px 6px 5px rgb(0, 0, 0); line-height: 80px; margin-bottom: 250px;}
+.titletext2{position: relative; z-index: 3; text-align: left; padding: 50px 0 0 50px; font-size: 50px; color: rgb(255, 255, 255); -webkit-text-stroke: 3px rgb(255, 48, 164); text-shadow: 6px 6px 5px rgb(0, 0, 0); line-height: 80px; margin-bottom: 250px;}
+.scrolldown{position: absolute; z-index: 3; right: 60px; font-size: 20px; border-top: solid 3px white; padding: 10px 100px 0 10px; letter-spacing: 3px; color: white;}
+
+.titletext img{width: 580px; margin-bottom: 50px;}
+.nav{position: fixed; background-color: rgba(100, 100, 100, 0.5); width: 50px; height: 100vh; backdrop-filter: saturate(180%) blur(20px);}
+
+.nav2{position: fixed; top: 10px; left: 8px; z-index: 2;}
+.nav2 span{font-size: 35px; color: white; font-weight: 300;}
+.nav2plus{position: fixed; top: -350px; left: -350px; width: 1300px; height: 1300px; border-radius: 50%; background: aqua;}
+
+.ct1{position: absolute; width: 450px; z-index: 3; bottom: -100px; left: 0; animation: ct 5s infinite; animation-direction: reverse;}
+.ct2{position: absolute; width: 450px; z-index: 3; bottom: -80px; left: 200px; animation: ct 3s infinite;}
+.ct3{position: absolute; width: 450px; z-index: 4; bottom: -80px; left: 450px; animation: ct 4s infinite; animation-direction: reverse;}
+.ct4{position: absolute; width: 450px; z-index: 3; bottom: -80px; left: 700px; animation: ct 5s infinite;}
+.ct5{position: absolute; width: 450px; z-index: 4; bottom: -80px; left: 920px; animation: ct 3s infinite; animation-direction: reverse;}
+.ct6{position: absolute; width: 450px; z-index: 3; bottom: -80px; left: 1200px; animation: ct 5s infinite;}
+.ct7{position: absolute; width: 450px; z-index: 3; bottom: -80px; left: 1500px; animation: ct 4s infinite; animation-direction: reverse;}
+
+.container .sec2{position: relative; left: -5%; background: url(../img/pallguys/bg2.webp) no-repeat; background-size: cover; background-position: 100% 50%; clip-path: polygon(0% 0%, calc(100% - 10vw) 0%, 100% 100%, calc(100% - 68vw) 100%); min-width: 75%;}
+.container .sec3{position: relative; left: -14%; background: url(../img/pallguys/bg3.webp) no-repeat; background-size: cover; background-position: 100% 50%; clip-path: polygon(0% 0%, 100% 0%, 88% 100%, calc(100% - 56vw) 100%); min-width: 67%;}
+.container .sec4{position: relative; left: -21%; background: url(../img/pallguys/bg4.webp) no-repeat; background-size: cover; background-position: 100% 50%; clip-path: polygon(11% 0%, 100% 0%, 89% 100%, 0% 100%); min-width: 75%;}
+.container .sec5{position: relative; left: -28%; background: url(../img/pallguys/bg5.webp) no-repeat; background-size: cover; background-position: 100% 50%; clip-path: polygon(11% 0%, 100% 0%, 100% 100%, 0% 100%); min-width: 75%;}
+
+
+
+
+
+
+
+
+
+
+
+
