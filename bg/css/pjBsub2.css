@@ -123,7 +123,7 @@ h1{letter-spacing: -3px; font-size: 35px;}
 
 
 .howmuch{font-size: 30px; font-weight: bolder;}
-.rightbox5text{display: flex; align-items: top; padding: 20px 0; border-top: solid rgb(206, 206, 206) 1px; margin-top: 30px;}
+.rightbox5text{display: flex; align-items:center; padding: 20px 0; border-top: solid rgb(206, 206, 206) 1px; margin-top: 30px;}
 .rightbox5text span{font-size: 40px; font-weight: 300; margin-right: 10px;}
 .rightbox5text a{color: #2997ff; font-size: 12px;}
 .rightbox5text p{font-size: 12px; font-weight: 400;}
